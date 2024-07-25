@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="START">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="test commit1.0">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/IMAGEDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/USERDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/IMAGE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/IMAGE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/USER.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -47,20 +52,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/francescozanovello/Desktop/Ing_Software/FOBackend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws",
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
@@ -160,6 +172,11 @@
       <workItem from="1721648952428" duration="3177000" />
       <workItem from="1721827756363" duration="167000" />
       <workItem from="1721827927090" duration="36000" />
+      <workItem from="1721828004320" duration="169000" />
+      <workItem from="1721828178521" duration="12000" />
+      <workItem from="1721828312737" duration="211000" />
+      <workItem from="1721840803201" duration="143000" />
+      <workItem from="1721913261332" duration="1153000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -201,7 +218,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721649421931</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test commit">
+      <option name="closed" value="true" />
+      <created>1721828110262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721828110262</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test commit1.0">
+      <option name="closed" value="true" />
+      <created>1721828157680</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721828157680</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +253,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="START" />
-    <option name="LAST_COMMIT_MESSAGE" value="START" />
+    <MESSAGE value="test commit" />
+    <MESSAGE value="test commit1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit1.0" />
   </component>
 </project>
