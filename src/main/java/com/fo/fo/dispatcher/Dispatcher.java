@@ -23,7 +23,7 @@ public class Dispatcher extends HttpServlet {
 
             String controllerAction = request.getParameter("controllerAction");
 
-            if (controllerAction == null) controllerAction = "HomeManagement.view";
+            if (controllerAction == null) controllerAction = "StartPage.view";
 
             String[] splittedAction = controllerAction.split("\\.");
             Class<?> controllerClass = Class.forName("com.FO.FO.controller." + splittedAction[0]);
