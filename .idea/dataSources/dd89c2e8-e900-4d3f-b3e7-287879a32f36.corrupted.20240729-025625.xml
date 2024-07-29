@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="FO@localhost [2]">
+<dataSource name="FO@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.51">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
@@ -997,7 +997,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Charset>utf8mb4</Charset>
     </collation>
     <schema id="288" parent="1" name="FO">
-      <LastIntrospectionLocalTimestamp>2024-07-29.08:53:51</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-29.08:54:03</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="ecommerce">

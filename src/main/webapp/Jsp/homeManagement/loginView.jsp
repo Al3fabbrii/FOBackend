@@ -236,14 +236,14 @@
 
                     <div class="frame">
                         <div class="input-field">
-                            <label for="username">Utente</label>
+                            <label for="username" class="label">Utente</label>
                             <input type="text" placeholder="username" class="input" id="username"  name="username" maxlength="40" required>
                         </div>
                     </div>
 
                     <div class="input-field-wrapper">
                         <div class="input-field">
-                            <label for="password">Password</label>
+                            <label for="password" class="label">Password</label>
                             <input type="password" placeholder="password" class="input" id="password" name="password" maxlength="40" required>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                     <button class="button"><input type="submit" class="div" value="Effettua il login"></button>
                 </form>
                 <button class="button-2"><p class="button-3" onclick="location.href='Dispatcher?controllerAction=homeManagement.view' ">Annulla</p></button>
-                <div class="div-wrapper"><p class="p">Non sei ancora registrato? <a href="Dispatcher?controllerAction=HomeManagement.registerView">Registrati qui</a></p></div>
+                <div class="div-wrapper"><p class="p">Non sei ancora registrato? <a href="Dispatcher?controllerAction=homeManagement.registerView">Registrati qui</a></p></div>
             </div>
         </div>
     </div>

@@ -1,9 +1,7 @@
 package com.fo.fo.controller;
 
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,14 +11,13 @@ import jakarta.servlet.http.HttpServletRequest;
 
 
 import com.fo.fo.model.dao.*;
-import com.fo.fo.model.mo.IMAGE;
 import com.fo.fo.services.config.Configuration;
 import com.fo.fo.services.logservice.LogService;
 import com.fo.fo.model.dao.exception.DuplicatedObjectException;
 import com.fo.fo.model.mo.USER;
 
-public class HomeManagement {
-    private HomeManagement() {
+public class homeManagement {
+    private homeManagement() {
     }
 
     public static void view(HttpServletRequest request, HttpServletResponse response) {
