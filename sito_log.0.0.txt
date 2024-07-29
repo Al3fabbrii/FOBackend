@@ -1,0 +1,4 @@
+lug 29, 2024 12:08:23 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 12:08:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view

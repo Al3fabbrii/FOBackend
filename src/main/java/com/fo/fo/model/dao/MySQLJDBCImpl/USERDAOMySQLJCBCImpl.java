@@ -25,7 +25,8 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
             String email,
             String password,
             String username,
-            String admin)throws DuplicatedObjectException {
+            String admin,
+            String deleted)throws DuplicatedObjectException {
 
         PreparedStatement ps;
         USER user = new USER();
@@ -41,7 +42,7 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
                     = " SELECT * "
                     + " FROM USER "
                     + " WHERE "
-                    + " Username = ?";
+                    + " username = ?";
 
             ps = conn.prepareStatement(sql);
             int i = 1;
@@ -50,16 +51,16 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
             ResultSet resultSet = ps.executeQuery();
 
             boolean exist;
-            boolean deleted = true;
+            boolean delete = true;
 
             exist = resultSet.next();
             //se esiste
             if (exist) {
-                deleted = resultSet.getString("Username").equals(user.getusername());
+                delete = resultSet.getString("username").equals(user.getusername());
             }
 
             resultSet.close();
-            if(exist && deleted) {
+            if(exist && delete) {
                 throw new DuplicatedObjectException("UserDAOJDBCImpl.create: Tentativo di inserimento di un username già esistente.");
             }
             else {
@@ -70,9 +71,10 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
                         + "     email,"
                         + "     password,"
                         + "     username,"
-                        + "     admin "
+                        + "     admin,"
+                        + "     deleted,"
                         + "   ) "
-                        + " VALUES (?,?,?,?,?,'N')";
+                        + " VALUES (?,?,?,?,?,'N','N')";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;
@@ -132,7 +134,8 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
                         + " email = ? ,"
                         + " password = ? ,"
                         + " username = ? , "
-                        + " admin = ? "
+                        + " admin = ? ,"
+                        + " deleted = ? "
                         + " WHERE "
                         + " ID_user = ?";
 
@@ -144,6 +147,7 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
                 ps.setString(i++, user.getpassword());
                 ps.setString(i++, user.getusername());
                 ps.setString(i++, user.getadmin());
+                ps.setString(i++, user.getdeleted());
 
                 ps.executeUpdate();
 
@@ -151,6 +155,64 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+    @Override
+    public void delete(USER user) {
+
+        PreparedStatement ps;
+
+        try {
+
+            String sql
+                    = " UPDATE USER "
+                    + " SET deleted='Y' "
+                    + " WHERE "
+                    + " ID_user=?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, user.getID_user());
+            ps.executeUpdate();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    @Override
+    public USER findLoggedUser() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+    @Override
+    public USER findByUsername(String username) {
+
+        PreparedStatement ps;
+        USER user = null;
+
+        try {
+
+            String sql
+                    = " SELECT * "
+                    + "   FROM USER "
+                    + " WHERE "
+                    + "   username = ?";
+
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, username);
+
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                user = read(resultSet);
+            }
+            resultSet.close();
+            ps.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return user;
+
     }
     USER read(ResultSet rs) {
 
@@ -181,6 +243,10 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
         }
         try {
             user.setadmin(rs.getString("admin"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setdeleted(rs.getString("deleted"));
         } catch (SQLException sqle) {
         }
 

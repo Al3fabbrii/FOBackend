@@ -27,7 +27,8 @@ public class USERDAOCookieImpl implements USERDAO {
             String email,
             String password,
             String username,
-            String admin
+            String admin,
+            String deleted
     ) {
 
         USER loggedUser = new USER();
@@ -53,6 +54,37 @@ public class USERDAOCookieImpl implements USERDAO {
         cookie.setPath("/");
         response.addCookie(cookie);
 
+    }
+    @Override
+    public void delete(USER loggedUser) {
+
+        Cookie cookie;
+        cookie = new Cookie("loggedUser", "");
+        cookie.setMaxAge(0);
+        cookie.setPath("/");
+        response.addCookie(cookie);
+
+    }
+    @Override
+    public USER findLoggedUser() {
+
+        Cookie[] cookies = request.getCookies();
+        USER loggedUser = null;
+
+        if (cookies != null) {
+            for (int i = 0; i < cookies.length && loggedUser == null; i++) {
+                if (cookies[i].getName().equals("loggedUser")) {
+                    loggedUser = decode(cookies[i].getValue());
+                }
+            }
+        }
+
+        return loggedUser;
+
+    }
+    @Override
+    public USER findByUsername(String username) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     private String encode(USER loggedUser) {

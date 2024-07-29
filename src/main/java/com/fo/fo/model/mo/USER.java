@@ -8,6 +8,7 @@ public class USER {
     private String password;
     private String username;
     private String admin;
+    private String deleted;
     public String getID_user() {return ID_user;}
     public void setID_user(String ID_user){this.ID_user=ID_user;}
     public String getname() {return name;}
@@ -22,4 +23,6 @@ public class USER {
     public void setusername(String username){this.username=username;}
     public String getadmin() {return admin;}
     public void setadmin(String admin){this.admin=admin;}
+    public String getdeleted() {return deleted;}
+    public void setdeleted(String deleted){this.deleted=deleted;}
 }

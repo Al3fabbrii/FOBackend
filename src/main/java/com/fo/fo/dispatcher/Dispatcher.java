@@ -23,16 +23,16 @@ public class Dispatcher extends HttpServlet {
 
             String controllerAction = request.getParameter("controllerAction");
 
-            if (controllerAction == null) controllerAction = "StartPage.view";
+            if (controllerAction == null) controllerAction = "HomeManagement.view";
 
             String[] splittedAction = controllerAction.split("\\.");
-            Class<?> controllerClass = Class.forName("com.FO.FO.controller." + splittedAction[0]);
+            Class<?> controllerClass = Class.forName("com.fo.fo.controller." + splittedAction[0]);
             Method controllerMethod = controllerClass.getMethod(splittedAction[1], HttpServletRequest.class, HttpServletResponse.class);
             LogService.getApplicationLogger().log(Level.INFO, splittedAction[0] + " " + splittedAction[1]);
             controllerMethod.invoke(null, request, response);
 
             String viewUrl = (String) request.getAttribute("viewUrl");
-            RequestDispatcher view = request.getRequestDispatcher("jsp/" + viewUrl + ".jsp");
+            RequestDispatcher view = request.getRequestDispatcher("Jsp/" + viewUrl + ".jsp");
             view.forward(request, response);
 
 

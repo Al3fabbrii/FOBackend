@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FO:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="test commit1.0">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/IMAGEDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/USERDAO.java" afterDir="false" />
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="fine scrittura MO e DAO USER per Cookie">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/IMAGE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/IMAGE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/dispatcher/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/CookieImpl/USERDAOCookieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/CookieImpl/USERDAOCookieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/USERDAOMySQLJCBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/USERDAOMySQLJCBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/USERDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/USERDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/USER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/USER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/services/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/services/config/Configuration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +32,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,8 +71,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.20.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/francescozanovello/Desktop/Ing_Software/FOBackend",
@@ -234,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721828157680</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fine scrittura MO e DAO USER per Cookie">
+      <option name="closed" value="true" />
+      <created>1722243333477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722243333477</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,9 +280,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="START" />
     <MESSAGE value="test commit" />
     <MESSAGE value="test commit1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit1.0" />
+    <MESSAGE value="fine scrittura MO e DAO USER per Cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine scrittura MO e DAO USER per Cookie" />
   </component>
 </project>

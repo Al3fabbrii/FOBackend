@@ -17,6 +17,6 @@ public class Configuration {
 
     /* Logger Configuration */
     public static final String GLOBAL_LOGGER_NAME="frutta";
-    public static final String GLOBAL_LOGGER_FILE="/Users/francescozanovello/Desktop/Ing_SOFTWARE/FO/sito_log.%g.%u.txt";
+    public static final String GLOBAL_LOGGER_FILE="/Users/francescozanovello/Desktop/Ing_SOFTWARE/FOBackend/sito_log.%g.%u.txt";
     public static final Level GLOBAL_LOGGER_LEVEL=Level.ALL;
 }
