@@ -11,6 +11,7 @@ public interface USERDAO {
             String email,
             String password,
             String username,
-            char admin)throws DuplicatedObjectException;
+            String admin)throws DuplicatedObjectException;
     /*method interface*/
+    public void update(USER user)throws DuplicatedObjectException;
 }

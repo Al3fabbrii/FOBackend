@@ -57,12 +57,13 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
             throw new RuntimeException(e);
         }
     }
-    /*
+
     @Override
-    public UtenteDAO getUtenteDAO() {
-        return new UtenteDAOMySQLJDBCImpl(connection);
+    public USERDAO getUSERDAO() {
+        return new USERDAOMySQLJCBCImpl(connection);
     }
 
+    /*
     @Override
     public ProdottoDAO getProdottoDAO() {
         return new ProdottoDAOMySQLJDBCImpl(connection);

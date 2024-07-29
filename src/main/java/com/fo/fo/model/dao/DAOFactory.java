@@ -13,9 +13,9 @@ public abstract class DAOFactory {
     public abstract void commitTransaction();
     public abstract void rollbackTransaction();
     public abstract void closeTransaction();
-    /*Indicare per ogni mo creato
-    public abstract UtenteDAO getUtenteDAO();
-    public abstract ProdottoDAO getProdottoDAO();
+    //Indicare per ogni mo creato
+    public abstract USERDAO getUSERDAO();
+    /*public abstract ProdottoDAO getProdottoDAO();
     public abstract OrderDAO getOrderDAO();
     public abstract CartDAO getCartDAO();
     public abstract ShowcaseDAO getShowcaseDAO();

@@ -7,7 +7,7 @@ public class USER {
     private String email;
     private String password;
     private String username;
-    private char admin;
+    private String admin;
     public String getID_user() {return ID_user;}
     public void setID_user(String ID_user){this.ID_user=ID_user;}
     public String getname() {return name;}
@@ -20,6 +20,6 @@ public class USER {
     public void setpassword(String password){this.password=password;}
     public String getusername() {return username;}
     public void setusername(String username){this.username=username;}
-    public char getadmin() {return admin;}
-    public void setadmin(char admin){this.admin=admin;}
+    public String getadmin() {return admin;}
+    public void setadmin(String admin){this.admin=admin;}
 }

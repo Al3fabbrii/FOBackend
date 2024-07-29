@@ -25,8 +25,165 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
             String email,
             String password,
             String username,
-            char admin)throws DuplicatedObjectException {
+            String admin)throws DuplicatedObjectException {
+
+        PreparedStatement ps;
         USER user = new USER();
+        user.setusername(username);
+        user.setpassword(password);
+        user.setemail(email);
+        user.setname(name);
+        user.setsurname(surname);
+
+        try {
+            //controllo se USERNAME esiste già in una tupla
+            String sql
+                    = " SELECT * "
+                    + " FROM USER "
+                    + " WHERE "
+                    + " Username = ?";
+
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setString(i++, user.getusername());
+
+            ResultSet resultSet = ps.executeQuery();
+
+            boolean exist;
+            boolean deleted = true;
+
+            exist = resultSet.next();
+            //se esiste
+            if (exist) {
+                deleted = resultSet.getString("Username").equals(user.getusername());
+            }
+
+            resultSet.close();
+            if(exist && deleted) {
+                throw new DuplicatedObjectException("UserDAOJDBCImpl.create: Tentativo di inserimento di un username già esistente.");
+            }
+            else {
+                sql
+                        = " INSERT INTO USER "
+                        + "     (name,"
+                        + "     surname,"
+                        + "     email,"
+                        + "     password,"
+                        + "     username,"
+                        + "     admin "
+                        + "   ) "
+                        + " VALUES (?,?,?,?,?,'N')";
+
+                ps = conn.prepareStatement(sql);
+                i = 1;
+                ps.setString(i++, user.getname());
+                ps.setString(i++, user.getsurname());
+                ps.setString(i++, user.getemail());
+                ps.setString(i++, user.getpassword());
+                ps.setString(i++, user.getusername());
+
+                ps.executeUpdate();
+
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return user;
+    }
+
+    @Override
+    public void update(USER user) throws DuplicatedObjectException {
+
+        PreparedStatement ps;
+        String sql;
+        try {
+            // controllo solo sull'username, il resto non mi interessa
+            // controllo se l'username (modificato) è già presente in una tupla
+            sql
+                    = " SELECT COUNT(*)username "
+                    + " FROM USER "
+                    + " WHERE "
+                    + " ID_user != ? AND "
+                    + " username = ?";
+
+            ps = conn.prepareStatement(sql);
+            int i = 1;
+            ps.setString(i++, user.getID_user());
+            ps.setString(i++, user.getusername());
+
+            ResultSet resultSet = ps.executeQuery();
+            int count = 0;
+
+            if(resultSet.next()){
+                count = resultSet.getInt(1);
+            }
+
+            resultSet.close();
+            if(count != 0) {
+                throw new DuplicatedObjectException("UtenteDAOJDBCImpl.create: Tentativo di inserimento di un username già esistente.");
+            }
+            else {
+                //se non esiste prosegui con modifica
+                sql
+                        = " UPDATE USER "
+                        + " SET "
+                        + " name = ? , "
+                        + " surname = ? , "
+                        + " email = ? ,"
+                        + " password = ? ,"
+                        + " username = ? , "
+                        + " admin = ? "
+                        + " WHERE "
+                        + " ID_user = ?";
+
+                ps = conn.prepareStatement(sql);
+                i = 1;
+                ps.setString(i++, user.getname());
+                ps.setString(i++, user.getusername());
+                ps.setString(i++, user.getemail());
+                ps.setString(i++, user.getpassword());
+                ps.setString(i++, user.getusername());
+                ps.setString(i++, user.getadmin());
+
+                ps.executeUpdate();
+
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    USER read(ResultSet rs) {
+
+        USER user = new USER();
+        try {
+            user.setID_user(rs.getString("ID_user"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setname(rs.getString("name"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setsurname(rs.getString("surname"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setemail(rs.getString("email"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setpassword(rs.getString("password"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setusername(rs.getString("username"));
+        } catch (SQLException sqle) {
+        }
+        try {
+            user.setadmin(rs.getString("admin"));
+        } catch (SQLException sqle) {
+        }
+
         return user;
     }
 }

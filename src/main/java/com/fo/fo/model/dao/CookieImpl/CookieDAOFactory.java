@@ -41,12 +41,12 @@ public class CookieDAOFactory extends DAOFactory {
     @Override
     public void closeTransaction() {
     }
-    /*
-    @Override
-    public UtenteDAO getUtenteDAO() {
-        return new UtenteDAOCookieImpl(request, response);
-    }
 
+    @Override
+    public USERDAO getUSERDAO() {
+        return new USERDAOCookieImpl(request, response);
+    }
+    /*
     @Override
     public ProdottoDAO getProdottoDAO() {
         throw new UnsupportedOperationException("Not supported yet.");
