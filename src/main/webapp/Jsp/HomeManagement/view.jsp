@@ -267,7 +267,7 @@
             <div class="frame"><img class="concerto-musicale" src="img/concerto-musicale.png" /></div>
             <div class="rectangle"></div>
             <div class="div-wrapper"><div class="text-wrapper">Seleziona l'operazione che desideri:</div></div>
-            <div class="group"><img class="account" src="img/account.png" onclick="location.href='Dispatcher?controllerAction=homeManagement.loginView'"/></div>
+            <div class="group"><img class="account" src="img/account.png" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
             <div class="benvenuto-your-name-wrapper">
                 <div class="benvenuto-your-name">Benvenuto:<br /><br /><br />&lt;your name&gt;</div>
             </div>

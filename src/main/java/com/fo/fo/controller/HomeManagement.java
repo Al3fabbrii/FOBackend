@@ -16,8 +16,8 @@ import com.fo.fo.services.logservice.LogService;
 import com.fo.fo.model.dao.exception.DuplicatedObjectException;
 import com.fo.fo.model.mo.USER;
 
-public class homeManagement {
-    private homeManagement() {
+public class HomeManagement {
+    private HomeManagement() {
     }
 
     public static void view(HttpServletRequest request, HttpServletResponse response) {

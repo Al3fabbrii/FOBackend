@@ -1,3 +1,12 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="com.fo.fo.model.mo.USER" %>
+<%@ page session="false" %>
+<%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "Registration";
+%>
 <!DOCTYPE html>
 <html>
 <style>
@@ -428,15 +437,15 @@
                             <input class="input" id="password" name="password" placeholder="password" type="text" required/>
                         </div>
                     </div>
-                    <input type="hidden" name="controllerAction" value="HomeManagement.logon"/>
+                    <input type="hidden" name="controllerAction" value="HomeManagement.register"/>
                     <button class="button-3">
                         <img class="user" src="img/user.svg" />
                         <input class="button-4" type="submit" value="Registrati">
                     </button>
                 </form>
             </div>
-            <div class="frame-3"><p class="p">Ti sei gi&agrave; registrato? <a href="Dispatcher?controllerAction=homeManagement.loginView">Fai il login</a></p></div>
-            <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=homeManagement.view' ">Annulla</p></button>
+            <div class="frame-3"><p class="p">Ti sei gi&agrave; registrato? <a href="Dispatcher?controllerAction=HomeManagement.loginView">Fai il login</a></p></div>
+            <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
             <div class="switch-field" data-color-mode="SDS-light">
                 <div class="checkbox-and-label">
                     <label for="organizzatore">Organizzatore</label>
