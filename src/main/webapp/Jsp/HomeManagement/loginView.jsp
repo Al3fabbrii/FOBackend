@@ -1,12 +1,38 @@
-<%--
+<%@ page import="com.fo.fo.model.mo.USER" %><%--
   Created by IntelliJ IDEA.
   User: user
   Date: 26/07/2024
   Time: 11:37
   To change this template use File | Settings | File Templates.
 --%>
+<%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "Home";
+%>
 <!DOCTYPE html>
 <html>
+<script>
+    function headerOnLoadHandler() {
+        var usernameTextField = document.querySelector("#username");
+        var usernameTextFieldMsg = "Lo username \xE8 obbligatorio.";
+        var passwordTextField = document.querySelector("#password");
+        var passwordTextFieldMsg = "La password \xE8 obbligatoria.";
+
+        if (usernameTextField != undefined && passwordTextField != undefined ) {
+            usernameTextField.setCustomValidity(usernameTextFieldMsg);
+            usernameTextField.addEventListener("change", function () {
+                this.setCustomValidity(this.validity.valueMissing ? usernameTextFieldMsg : "");
+            });
+            passwordTextField.setCustomValidity(passwordTextFieldMsg);
+            passwordTextField.addEventListener("change", function () {
+                this.setCustomValidity(this.validity.valueMissing ? passwordTextFieldMsg : "");
+            });
+        }
+    }
+
+</script>
 <style>
     :root {
         --body-base-font-family: "Inter", Helvetica;

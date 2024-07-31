@@ -1,3 +1,5 @@
+<%@ page import="com.fo.fo.model.mo.USER" %>
+<%@ page import="com.fo.fo.services.logservice.LogService" %>
 <%--
   Created by IntelliJ IDEA.
   User: user
@@ -5,6 +7,12 @@
   Time: 09:40
   To change this template use File | Settings | File Templates.
 --%>
+<%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "Home";
+%>
 <!DOCTYPE html>
 <html>
 <style>
@@ -256,11 +264,26 @@
     }
 
 </style>
+<script language="javascript">
+    function mainOnLoadHandler() {}
+</script>
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
+    <form name="logoutForm" action="Dispatcher" method="post">
+        <input type="hidden" name="controllerAction" value="HomeManagement.logout"/>
+    </form>
 </head>
 <body>
+<%@include file="/include/htmlHead.jsp"%>
+<% if (loggedOn) { %>
+<div class="benvenuto-your-name-wrapper">
+    <div class="benvenuto-your-name">Benvenuto:<br /><br /><br /><%=loggedUser.getname()%> <%=loggedUser.getsurname()%></div>
+</div>
+<% } %>
+<a href="javascript:logoutForm.submit()">Logout
+    <svg style="fill: rgb(0,0,0)" width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"/></svg>
+</a>
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">
@@ -268,9 +291,6 @@
             <div class="rectangle"></div>
             <div class="div-wrapper"><div class="text-wrapper">Seleziona l'operazione che desideri:</div></div>
             <div class="group"><img class="account" src="img/account.png" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
-            <div class="benvenuto-your-name-wrapper">
-                <div class="benvenuto-your-name">Benvenuto:<br /><br /><br />&lt;your name&gt;</div>
-            </div>
             <button class="button">
                 <img class="upload" src="img/upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
             </button>

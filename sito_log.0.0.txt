@@ -2,3 +2,588 @@ lug 29, 2024 12:08:23 PM com.fo.fo.services.logservice.LogService getApplication
 CONFIG: Logger: frutta created.
 lug 29, 2024 12:08:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
 INFO: HomeManagement view
+lug 29, 2024 3:16:45 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 3:16:45 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 3:16:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:16:59 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 3:17:01 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:17:03 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 3:17:08 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 3:19:58 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:20:38 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 3:20:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 3:21:28 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:22:20 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:22:21 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 3:23:02 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:33:01 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 3:33:01 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 3:33:04 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:33:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 29, 2024 3:33:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 3:33:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 29, 2024 4:00:16 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:00:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 29, 2024 4:04:44 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 4:04:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:04:46 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:04:53 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 29, 2024 4:14:19 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 4:14:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:14:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:14:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:17:51 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 4:17:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:17:53 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:18:00 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 29, 2024 4:21:05 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 29, 2024 4:21:05 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:21:10 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:21:14 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 4:21:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:21:43 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 4:23:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 29, 2024 4:23:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:23:34 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 29, 2024 4:23:36 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement registerView
+lug 29, 2024 4:23:43 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:43:44 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:43:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:43:45 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:43:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:44:56 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:44:56 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:44:58 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:45:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:45:06 PM com.fo.fo.controller.homeManagement logon
+SEVERE: Controller Error
+java.lang.NullPointerException: Cannot invoke "com.fo.fo.model.mo.USER.getID_user()" because "loggedUser" is null
+	at com.fo.fo.controller.homeManagement.logon(homeManagement.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.fo.fo.dispatcher.Dispatcher.processRequest(Dispatcher.java:32)
+	at com.fo.fo.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+lug 30, 2024 2:45:24 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:45:24 PM com.fo.fo.controller.homeManagement logon
+SEVERE: Controller Error
+java.lang.NullPointerException: Cannot invoke "com.fo.fo.model.mo.USER.getID_user()" because "loggedUser" is null
+	at com.fo.fo.controller.homeManagement.logon(homeManagement.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.fo.fo.dispatcher.Dispatcher.processRequest(Dispatcher.java:32)
+	at com.fo.fo.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+lug 30, 2024 2:49:06 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:49:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:49:08 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:49:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:49:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:50:36 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:50:36 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:50:37 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:50:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:51:04 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:51:04 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:51:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:51:10 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:51:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:51:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:51:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:51:29 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:51:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:51:51 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:51:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:51:52 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:51:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:54:06 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:54:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:54:07 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:54:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 30, 2024 2:54:13 PM com.fo.fo.controller.homeManagement logon
+SEVERE: Controller Error
+java.lang.NullPointerException: Cannot invoke "com.fo.fo.model.mo.USER.getname()" because "user" is null
+	at com.fo.fo.controller.homeManagement.logon(homeManagement.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.fo.fo.dispatcher.Dispatcher.processRequest(Dispatcher.java:32)
+	at com.fo.fo.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+lug 30, 2024 2:55:53 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 30, 2024 2:55:53 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement view
+lug 30, 2024 2:55:54 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement loginView
+lug 30, 2024 2:55:59 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: homeManagement logon
+lug 31, 2024 2:53:42 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 2:53:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 2:53:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 2:54:12 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 2:54:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 2:54:14 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 2:56:23 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 2:56:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 2:56:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 2:58:49 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 2:58:49 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 2:58:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:02:19 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:02:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:02:25 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:03:47 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:03:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:03:48 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:03:52 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:03:53 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:03:55 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+lug 31, 2024 3:03:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:04:02 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:04:04 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:05:15 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:05:15 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:05:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:05:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:05:41 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:05:41 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:05:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:05:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:05:47 PM com.fo.fo.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.NullPointerException: Cannot invoke "com.fo.fo.model.mo.USER.getname()" because "user" is null
+	at com.fo.fo.controller.HomeManagement.logon(HomeManagement.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.fo.fo.dispatcher.Dispatcher.processRequest(Dispatcher.java:32)
+	at com.fo.fo.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+lug 31, 2024 3:06:11 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:06:11 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:06:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:06:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:06:17 PM com.fo.fo.controller.HomeManagement logon
+SEVERE: Controller Error
+java.lang.NullPointerException: Cannot invoke "com.fo.fo.model.mo.USER.getname()" because "user" is null
+	at com.fo.fo.controller.HomeManagement.logon(HomeManagement.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at com.fo.fo.dispatcher.Dispatcher.processRequest(Dispatcher.java:32)
+	at com.fo.fo.dispatcher.Dispatcher.doPost(Dispatcher.java:77)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+lug 31, 2024 3:06:26 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:06:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:06:28 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:06:32 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:07:26 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:07:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:07:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:07:31 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:07:48 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:07:48 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:07:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:07:55 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:11:24 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:11:24 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:11:25 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:11:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:12:15 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:12:15 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:12:38 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:12:38 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:14:08 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:14:08 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:15:05 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:15:05 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:15:07 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:15:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:15:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:15:21 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:15:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:15:28 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:15:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:22:44 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:22:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:22:46 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:22:52 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:22:54 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:22:59 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:23:04 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:25:16 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:25:16 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:25:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:25:25 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:30:30 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:30:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:30:45 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:30:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:36:49 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:36:49 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:36:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:36:56 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:36:58 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:37:04 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:37:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:37:10 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:37:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:37:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:37:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:38:16 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:38:16 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:38:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:38:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:38:24 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:38:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:38:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:42:19 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:42:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:42:20 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:42:24 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:42:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:42:31 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:42:33 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+lug 31, 2024 3:43:54 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:43:54 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:44:05 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:44:05 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:44:06 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:44:10 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:47:17 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:47:17 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:47:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:47:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 3:47:42 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 3:47:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 3:47:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 3:47:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon

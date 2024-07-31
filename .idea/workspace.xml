@@ -9,16 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Removed stylesheet as css files and moved them into jsp">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="sistemazione file vari per avvio sito, aggiunta attributo deleted su USER">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/FO.yQgAAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/homeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/dispatcher/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/dispatcher/Dispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/img/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/account.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/img/concerto-musicale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/concerto-musicale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/img/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/user.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/registerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/registerView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -62,13 +67,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -111,7 +109,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.25" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
+    <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
       <deployment>
         <artifact name="FO:war exploded">
           <settings>
@@ -198,14 +196,6 @@
       </method>
     </configuration>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -224,8 +214,7 @@
       <workItem from="1722086505432" duration="3397000" />
       <workItem from="1722176313375" duration="639000" />
       <workItem from="1722238538012" duration="1412000" />
-      <workItem from="1722345220332" duration="39000" />
-      <workItem from="1722345774117" duration="1005000" />
+      <workItem from="1722430913128" duration="3388000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -275,15 +264,7 @@
       <option name="project" value="LOCAL" />
       <updated>1722258903338</updated>
     </task>
-    <task id="LOCAL-00007" summary="Removed stylesheet as css files and moved them into jsp">
-      <option name="closed" value="true" />
-      <created>1722262790514</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1722262790514</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +284,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="START" />
     <MESSAGE value="Changed caps letter" />
-    <MESSAGE value="Removed stylesheet as css files and moved them into jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed stylesheet as css files and moved them into jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed caps letter" />
   </component>
 </project>

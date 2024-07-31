@@ -16,4 +16,4 @@
 <body>
 If you are not redirected automatically, follow the <a href='<%=contextPath%>/Dispatcher'>link</a>
 </body>
-</html>>
+</html>
