@@ -9,7 +9,7 @@
     boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
     USER loggedUser = (USER) request.getAttribute("loggedUser");
     String applicationMessage = (String) request.getAttribute("applicationMessage");
-    String menuActiveLink = "Home";
+    String menuActiveLink = "Login";
 %>
 <!DOCTYPE html>
 <html>
@@ -322,6 +322,7 @@
     <link rel="stylesheet" href="globals.css" />
 </head>
 <body>
+<%@include file="/include/htmlHead.jsp"%>
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">

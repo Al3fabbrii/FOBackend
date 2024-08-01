@@ -401,6 +401,7 @@
 
 </head>
 <body>
+<%@include file="/include/htmlHead.jsp"%>
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">
@@ -408,14 +409,14 @@
                 <form name="registerForm" action="Dispatcher" method="post">
                     <div class="frame-4">
                         <div class="input-field">
-                            <label for="nome" class="label">Nome</label>
-                            <input class="input" id="nome" name="nome" placeholder="nome" type="text" required/>
+                            <label for="name" class="label">Nome</label>
+                            <input class="input" id="name" name="name" placeholder="nome" type="text" required/>
                         </div>
                     </div>
                     <div class="frame-2">
                         <div class="input-field">
-                            <label for="cognome" class="label">Cognome:</label>
-                            <input class="input" id="cognome" name="cognome" placeholder="cognome" type="text" required/>
+                            <label for="surname" class="label">Cognome:</label>
+                            <input class="input" id="surname" name="surname" placeholder="cognome" type="text" required/>
                         </div>
                     </div>
                     <div class="div-wrapper">
@@ -446,12 +447,12 @@
             </div>
             <div class="frame-3"><p class="p">Ti sei gi&agrave; registrato? <a href="Dispatcher?controllerAction=HomeManagement.loginView">Fai il login</a></p></div>
             <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
-            <div class="switch-field" data-color-mode="SDS-light">
+            <!--<div class="switch-field" data-color-mode="SDS-light">
                 <div class="checkbox-and-label">
-                    <label for="organizzatore">Organizzatore</label>
-                    <input type="checkbox" id="organizzatore" name="organizzatore" value="Organizzatore">
+                    <label for="admin">Organizzatore</label>
+                    <input type="checkbox" id="admin" name="admin" value="Organizzatore">
                 </div>
-            </div>
+            </div>-->
 
 
         </div>

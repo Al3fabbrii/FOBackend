@@ -74,7 +74,7 @@ public class USERDAOMySQLJCBCImpl implements USERDAO {
                         + "     admin,"
                         + "     deleted,"
                         + "   ) "
-                        + " VALUES (?,?,?,?,?,'N','N')";
+                        + " VALUES (?,?,?,?,?,'0','N')";
 
                 ps = conn.prepareStatement(sql);
                 i = 1;

@@ -9,21 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="sistemazione file vari per avvio sito, aggiunta attributo deleted su USER">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/include/htmlHead.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/FO.yQgAAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd89c2e8-e900-4d3f-b3e7-287879a32f36/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare. Nuova pagina dentro l'include per application message.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadViewManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_2024_15_19_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_2024_15_19__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sito_log.0.0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sito_log.0.0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/USERDAOMySQLJCBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/USERDAOMySQLJCBCImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/registerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/registerView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -214,7 +209,8 @@
       <workItem from="1722086505432" duration="3397000" />
       <workItem from="1722176313375" duration="639000" />
       <workItem from="1722238538012" duration="1412000" />
-      <workItem from="1722430913128" duration="3388000" />
+      <workItem from="1722430913128" duration="3731000" />
+      <workItem from="1722434662472" duration="6880000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -264,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722258903338</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare. Nuova pagina dentro l'include per application message.">
+      <option name="closed" value="true" />
+      <created>1722434626143</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722434626143</updated>
+    </task>
+    <task id="LOCAL-00008" summary="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare. Nuova pagina dentro l'include per application message.">
+      <option name="closed" value="true" />
+      <created>1722434649283</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722434649283</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +296,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="START" />
     <MESSAGE value="Changed caps letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed caps letter" />
+    <MESSAGE value="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare." />
+    <MESSAGE value="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare. Nuova pagina dentro l'include per application message." />
+    <option name="LAST_COMMIT_MESSAGE" value="inizio sistemazione fase di login, il login funziona ma applicationmessage non esce, anche logout funziona, le pagine si chiamano col proprio nome nella barra superiore. Da sistemare se entro con credenziali errati poi registrazione ancora da iniziare. Nuova pagina dentro l'include per application message." />
   </component>
 </project>

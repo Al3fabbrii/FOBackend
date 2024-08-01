@@ -587,3 +587,323 @@ lug 31, 2024 3:47:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
 INFO: HomeManagement loginView
 lug 31, 2024 3:47:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
 INFO: HomeManagement logon
+lug 31, 2024 4:05:23 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+lug 31, 2024 4:05:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+lug 31, 2024 4:05:27 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+lug 31, 2024 4:05:30 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+lug 31, 2024 4:05:32 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+ago 01, 2024 11:49:11 AM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 11:49:11 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 11:49:18 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:49:22 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+ago 01, 2024 11:49:46 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:49:56 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+ago 01, 2024 11:50:03 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+ago 01, 2024 11:53:05 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:53:12 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 11:56:16 AM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 11:56:16 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 11:56:23 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:56:28 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+ago 01, 2024 11:58:05 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:58:07 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 11:59:20 AM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 11:59:20 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 11:59:22 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:59:27 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+ago 01, 2024 11:59:33 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 11:59:37 AM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logon
+ago 01, 2024 12:00:33 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 12:00:33 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 12:00:39 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement logout
+ago 01, 2024 2:37:40 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:37:40 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:37:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:37:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:38:08 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:38:08 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:38:11 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:40:51 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:40:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:40:55 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:40:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:41:16 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:41:16 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:41:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:41:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:41:40 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:41:40 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:41:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:46:37 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:46:37 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:46:39 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:46:41 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:46:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:46:57 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:47:40 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:47:40 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:47:42 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:47:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:48:00 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:48:00 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:49:19 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:49:19 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:49:21 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:49:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:49:44 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:49:44 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:49:46 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:53:54 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:53:54 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:53:55 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:53:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:54:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:54:13 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:54:16 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:55:24 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:55:24 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:55:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:55:28 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:55:45 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:55:45 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 2:57:33 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 2:57:33 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 2:57:34 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 2:57:36 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 2:57:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 2:57:50 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:00:09 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:00:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:00:10 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:00:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:00:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:00:27 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:02:09 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:02:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:02:11 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:02:13 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:02:38 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:02:38 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:14:08 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:14:08 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:14:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:14:11 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:14:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:14:22 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:15:07 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:15:07 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:15:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:15:11 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:15:20 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:15:20 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:22:55 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:22:55 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:22:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:22:59 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:23:12 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:23:12 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:23:57 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:23:57 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:23:58 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:24:00 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:24:09 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:24:09 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:32:18 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:32:18 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:32:20 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:32:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:32:37 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:32:38 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:52:45 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:52:45 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:52:47 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:52:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:52:58 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:52:59 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:53:48 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:53:48 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 3:53:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement loginView
+ago 01, 2024 3:53:51 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement registerView
+ago 01, 2024 3:54:01 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement register
+ago 01, 2024 3:54:01 PM com.fo.fo.controller.HomeManagement register
+INFO: Tentativo di inserimento di un username già esistente.
+ago 01, 2024 3:59:37 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 3:59:37 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:01:01 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:01:01 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:01:03 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: UploadViewManagement view
+ago 01, 2024 4:02:37 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:02:37 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:04:00 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:04:00 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:06:49 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:06:49 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:06:50 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: UploadViewManagement view
+ago 01, 2024 4:09:20 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:09:20 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:09:22 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: ViewEventManagement view
+ago 01, 2024 4:09:26 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: ViewEventManagement view
+ago 01, 2024 4:11:15 PM com.fo.fo.services.logservice.LogService getApplicationLogger
+CONFIG: Logger: frutta created.
+ago 01, 2024 4:11:15 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: HomeManagement view
+ago 01, 2024 4:11:23 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: UploadViewManagement view
+ago 01, 2024 4:11:53 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: ViewEventManagement view
+ago 01, 2024 4:12:32 PM com.fo.fo.dispatcher.Dispatcher processRequest
+INFO: UploadViewManagement view

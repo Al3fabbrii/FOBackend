@@ -291,10 +291,10 @@
             <div class="rectangle"></div>
             <div class="div-wrapper"><div class="text-wrapper">Seleziona l'operazione che desideri:</div></div>
             <div class="group"><img class="account" src="img/account.png" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
-            <button class="button">
+            <button class="button" onclick=location.href='Dispatcher?controllerAction=UploadViewManagement.view'>
                 <img class="upload" src="img/upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
             </button>
-            <div class="button-2">
+            <div class="button-2" onclick=location.href='Dispatcher?controllerAction=ViewEventManagement.view'>
                 <p class="select">Seleziona contenuti per creare un post<br />(solo organizzatori di eventi)</p>
             </div>
         </div>
