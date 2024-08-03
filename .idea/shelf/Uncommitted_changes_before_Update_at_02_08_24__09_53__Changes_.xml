@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]" date="1722585214885" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 02/08/24, 09:53 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/webapp/Jsp/HomeManagement/img/account.png" />
+    <option name="AFTER_PATH" value="src/main/webapp/Jsp/homeManagement/img/account.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/account.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="src/main/webapp/Jsp/HomeManagement/img/concerto-musicale.png" />
+    <option name="AFTER_PATH" value="src/main/webapp/Jsp/homeManagement/img/concerto-musicale.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/concerto-musicale.png" />
+  </binary>
+</changelist>

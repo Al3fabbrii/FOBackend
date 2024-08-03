@@ -440,7 +440,7 @@
                     </div>
                     <input type="hidden" name="controllerAction" value="HomeManagement.register"/>
                     <button class="button-3">
-                        <img class="user" src="img/user.svg" />
+                        <img class="user" src="user.svg" />
                         <input class="button-4" type="submit" value="Registrati">
                     </button>
                 </form>

@@ -16,7 +16,7 @@
     }
     .desktop .overlap-group {
         position: absolute;
-        width: 1189px;
+        width: 1500px;
         height: 874px;
         top: 61px;
         left: 37px;
@@ -79,7 +79,7 @@
         gap: var(--size-space-200);
         position: absolute;
         top: 416px;
-        left: -150px;
+        left: 0px;
     }
     .desktop .select {
         display: flex;
@@ -144,13 +144,15 @@
         position: absolute;
         width: 45px;
         height: 45px;
-        top: 37px;
+        top: 20px;
         left: 1500px;
         background-color: #336699;
         border-radius: 22.5px;
-        background-image: url(img/account.png);
+        background-image: url(https://www.svgrepo.com/show/453660/account.svg);
         background-size: cover;
         background-position: 50% 50%;
+        border: 2px solid;
+        border-color: black;
     }
     .desktop .button {
         all: unset;
@@ -164,7 +166,7 @@
         padding: var(--size-space-300);
         position: absolute;
         top: 880px;
-        left: 1500px;
+        left: 1650px;
         background-color: #336699;
         border-radius: var(--size-radius-200);
         overflow: hidden;
@@ -183,6 +185,7 @@
         font-size: 20px;
         letter-spacing: 0;
         line-height: 20px;
+        left: -10px;
         white-space: nowrap;
     }
     div.gallery {
@@ -190,7 +193,7 @@
         margin: 5px;
         margin-left: 5px;
         float: left;
-        width: 100px;
+        width: 90px;
         border-radius: 15px;
     }
 
@@ -302,123 +305,123 @@
             </div>
             <div class="group">
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image1" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image1" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check1"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image2" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image2" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check2"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image3" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image3" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check3"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image4" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image4" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check4"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image5" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image5" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check5"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image6" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image6" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check6"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image7" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image7" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check7"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image8" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image8" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check8"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image9" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image9" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check9"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image10" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image10" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check10"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image11" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image11" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check11"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image12" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image12" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check12"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image13" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image13" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check13"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image14" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image14" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check14"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image15" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image15" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check15"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image16" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image16" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check16"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image17" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image17" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check17"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image18" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image18" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check18"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image19" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image19" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check19"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image20" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image20" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check20"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image21" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image21" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check21"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image22" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image22" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check22"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image23" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image23" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check23"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image24" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image24" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check24"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image25" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image25" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check25"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image26" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image26" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check26"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image27" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image27" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check27"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image28" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image28" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check28"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image29" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image29" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check29"/>
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image30" width="200" height="150">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image30" width="200" height="150">
                     <input type="checkbox" class="checkbox" id="check30"/>
                 </div>
 
@@ -437,11 +440,10 @@
         </div>
         <div class="div-wrapper"><p class="p">Seleziona una o più foto per creare il tuo post</p></div>
     </div>
-    <div class="overlap" onclick="location.href='Dispatcher?controllerAction=homeManagement.loginView' "></div>
+    <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
     <div class="button">
         <img class="img" src="img/tag.svg"/> <p class="button-2">Crea il post</p>
     </div>
-</div>
 </div>
 </body>
 </html>
