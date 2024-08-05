@@ -5,7 +5,7 @@
 AWS.config.update({
     accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
     secretAccessKey: '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',
-    region: 'eu-south-1'  // Es. 'eu-so'
+    region: 'eu-south-1'  // Es. 'eu-south-1'
 });
 
 
