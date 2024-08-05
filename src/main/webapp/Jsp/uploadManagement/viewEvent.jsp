@@ -79,7 +79,7 @@
         gap: var(--size-space-200);
         position: absolute;
         top: 416px;
-        left: 0px;
+        left: -55px;
     }
     .desktop .select {
         display: flex;
@@ -145,7 +145,7 @@
         width: 45px;
         height: 45px;
         top: 20px;
-        left: 1500px;
+        left: 1600px;
         background-color: #336699;
         border-radius: 22.5px;
         background-image: url(https://www.svgrepo.com/show/453660/account.svg);
@@ -291,6 +291,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="desktop">

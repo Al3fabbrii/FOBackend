@@ -9,25 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="sistemazione file vari per avvio sito, aggiunta attributo deleted su USER">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.0.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.21.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/account.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6a92d18c-793f-45d4-8d49-83e6ffcc64ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6a92d18c-793f-45d4-8d49-83e6ffcc64ca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_2024_17_17_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_2024_17_17__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_07_2024_09_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_07_2024_09_38__Changes_.xml" beforeDir="false" />
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_10_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_10_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__10_06__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__10_09__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/services/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/services/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/concerto-musicale.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/concerto-musicale.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/img/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/user.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/loginView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/registerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/registerView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/HomeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/img/account.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
@@ -45,6 +36,7 @@
         <option value="Class" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -95,30 +87,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.1.20.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/alessandro/Scrivania/IngegneriaSoftware/FOBackend",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.ignored.files",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alessandro/Scrivania/IngegneriaSoftware/FOBackend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "MySQL"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -326,7 +318,11 @@
       <workItem from="1722238538012" duration="1412000" />
       <workItem from="1722430913128" duration="3388000" />
       <workItem from="1722587886232" duration="588000" />
-      <workItem from="1722692318993" duration="3142000" />
+      <workItem from="1722692318993" duration="3335000" />
+      <workItem from="1722759306558" duration="1187000" />
+      <workItem from="1722844535051" duration="1254000" />
+      <workItem from="1722849503163" duration="1048000" />
+      <workItem from="1722859987670" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -376,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722258903338</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.">
+      <option name="closed" value="true" />
+      <created>1722695650034</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722695650034</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,6 +400,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="START" />
     <MESSAGE value="Changed caps letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed caps letter" />
+    <MESSAGE value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
