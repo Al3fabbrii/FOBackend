@@ -9,19 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_10_06_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_10_09_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__10_06__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__10_09__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/img/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Commit del form nuovo. Aggiunta js" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +310,7 @@
       <workItem from="1722759306558" duration="1187000" />
       <workItem from="1722844535051" duration="1254000" />
       <workItem from="1722849503163" duration="1048000" />
-      <workItem from="1722859987670" duration="632000" />
+      <workItem from="1722859987670" duration="3862000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -380,7 +368,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722695650034</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Commit del form nuovo. Aggiunta js">
+      <option name="closed" value="true" />
+      <created>1722863560477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722863560477</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit del form nuovo. Aggiunta js">
+      <option name="closed" value="true" />
+      <created>1722863721049</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722863721049</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +405,8 @@
     <MESSAGE value="START" />
     <MESSAGE value="Changed caps letter" />
     <MESSAGE value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
+    <MESSAGE value="Commit del form nuovo. Aggiunta js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit del form nuovo. Aggiunta js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

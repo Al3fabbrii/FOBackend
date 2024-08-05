@@ -4,7 +4,7 @@
 // Configura le tue credenziali AWS
 AWS.config.update({
     accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
-    secretAccessKey: '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',
+    secretAccessKey: '',
     region: 'eu-south-1'  // Es. 'eu-south-1'
 });
 
