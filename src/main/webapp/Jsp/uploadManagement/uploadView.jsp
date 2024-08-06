@@ -302,6 +302,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
 <div class="desktop">
     <div class="div">
         <div class="overlap">
@@ -311,21 +312,94 @@
                 <div class="select-field">
                     <label for="select" class="label">Seleziona l'evento</label>
                     <select name="select" id="select" class="select">
-                        <option class="value">Evento 1</option>
-                        <option class="value">Evento 2</option>
-                        <option class="value">Evento 3</option>
-                        <option class="value">Evento 4</option>
-                        <option class="value">Evento 5</option>
-                        <option class="value">Evento 6</option>
+                        <option class="value" id="Event1">Evento 1</option>
+                        <option class="value" id="Event2">Evento 2</option>
+                        <option class="value" id="Event3">Evento 3</option>
+                        <option class="value" id="Event4">Evento 4</option>
+                        <option class="value" id="Event5">Evento 5</option>
+                        <option class="value" id="Event6">Evento 6</option>
                     </select>
                 </div>
             </div>
             <div class="overlap-2">
                 <div class="upload-container">
                     <h1>Carica Immagini e Video su S3</h1>
-                    <form id="uploadForm">
+                    <form id="uploadForm" enctype="multipart/form-data" method="post">
                         <input type="file" id="fileInput" accept="image/*,video/*" multiple required>
                         <button type="submit">Carica</button>
+                        <script> //
+
+
+                        // Configura le tue credenziali AWS
+                        AWS.config.update({
+                            accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
+                            secretAccessKey: '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',
+                            region: 'eu-south-1'  // Es. 'eu-south-1'
+                        });
+
+
+                        const s3 = new AWS.S3();
+
+
+                            document.getElementById('select').addEventListener('change', function() {
+                            var selectedValue = this.value;
+                            var resultDiv = document.getElementById('result');
+
+                            switch(selectedValue) {
+                            case 'Event1':
+                                resultDiv.textContent = 'You selected Option 1';
+                                break;
+                            case 'Event2':
+                                resultDiv.textContent = 'You selected Option 2';
+                                break;
+                            case 'Event3':
+                                resultDiv.textContent = 'You selected Option 3';
+                                break;
+                            case 'Event4':
+                                resultDiv.textContent = 'You selected Option 4';
+                                break;
+                            case 'Event5':
+                                resultDiv.textContent = 'You selected Option 5';
+                                break;
+                            case 'Event6':
+                                resultDiv.textContent = 'You selected Option 6';
+                                break;
+                        }
+                        });
+
+
+                        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            console.log('Form submit intercepted');
+                            const files = document.getElementById('fileInput').files;
+                            if (files.length > 0) {
+                                for (let i = 0; i < files.length; i++) {
+                                    uploadFile(files[i]);
+                                }
+                            }
+                        });
+
+
+                        function uploadFile(file) {
+                            const params = {
+                                Bucket: 'projectfo/${selectedValue}',
+                                Key: file.name,
+                                Body: file,
+                                ACL: 'public-read'  // Puoi configurarlo secondo le tue necessità
+                            };
+
+
+                            s3.upload(params, function(err, data) {
+                                const statusDiv = document.getElementById('status');
+                                if (err) {
+                                    statusDiv.textContent = `Errore nel caricamento: ${err.message}`;
+                                } else {
+                                    statusDiv.innerHTML += `File caricato con successo! <a href="${data.Location}" target="_blank">${data.Location}</a><br>`;
+                                }
+                            });
+                        }
+
+                        </script>
                     </form>
                     <div id="status"></div>
                 </div>
@@ -337,7 +411,5 @@
     <button class="button-3"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
 </div>
 </div>
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
