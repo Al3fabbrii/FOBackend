@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.fo.fo.model.mo.USER" %>
 <%@ page import="com.fo.fo.services.logservice.LogService" %>
 <%--
@@ -62,6 +63,7 @@
         border-radius: 15px;
         border: 5px solid;
         border-color: #336699;
+        background-image: url("https://unsplash.com/it/foto/gruppo-di-persone-davanti-al-palco-ZhQCZjr9fHo");
     }
 
     .desktop .rectangle {
@@ -118,8 +120,9 @@
         top: 1px;
         left: 1px;
         object-fit: cover;
-        backdrop-filter: brightness(0%);
-        border-radius: 90px;
+        backdrop-filter: brightness(100%);
+        background-color: white;
+        border-radius: 100px;
         border: 3px solid;
         border-color: #000000;
     }
@@ -264,18 +267,36 @@
     }
 
 </style>
-<script language="javascript">
-    function mainOnLoadHandler() {}
-</script>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <form name="logoutForm" action="Dispatcher" method="post">
         <input type="hidden" name="controllerAction" value="HomeManagement.logout"/>
     </form>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var applicationMessage;
+        <% if (applicationMessage != null && !applicationMessage.isEmpty()) { %>
+        applicationMessage = "<%= applicationMessage %>";
+        <% } %>
+
+        function onLoadHandler() {
+            // Chiamata a eventuali altre funzioni di onload
+            try { headerOnLoadHandler(); } catch (e) {}
+            try { mainOnLoadHandler(); } catch (e) {}
+
+            // Mostra il messaggio di errore se presente
+            if (applicationMessage != undefined) {
+                alert(applicationMessage);
+            }
+        }
+
+        // Aggiungi l'event listener per il caricamento della pagina
+        window.addEventListener("load", onLoadHandler);
+    </script>
 </head>
 <body>
-<%@include file="/include/htmlHead.jsp"%>
 <% if (loggedOn) { %>
 <div class="benvenuto-your-name-wrapper">
     <div class="benvenuto-your-name">Benvenuto:<br /><br /><br /><%=loggedUser.getname()%> <%=loggedUser.getsurname()%></div>
@@ -287,14 +308,14 @@
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">
-            <div class="frame"><img class="concerto-musicale" src="img/concerto-musicale.png" /></div>
+            <div class="frame"><img class="concerto-musicale" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/></div>
             <div class="rectangle"></div>
             <div class="div-wrapper"><div class="text-wrapper">Seleziona l'operazione che desideri:</div></div>
-            <div class="group"><img class="account" src="img/account.png" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
-            <button class="button" onclick=location.href='Dispatcher?controllerAction=UploadViewManagement.view'>
-                <img class="upload" src="img/upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
+            <div class="group"><img class="account" src="https://www.svgrepo.com/show/453660/account.svg" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
+            <button class="button" onclick="location.href='Dispatcher?controllerAction=UploadManagement.uploadView'">
+                <img class="upload" src="upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
             </button>
-            <div class="button-2" onclick=location.href='Dispatcher?controllerAction=ViewEventManagement.view'>
+            <div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView'">
                 <p class="select">Seleziona contenuti per creare un post<br />(solo organizzatori di eventi)</p>
             </div>
         </div>

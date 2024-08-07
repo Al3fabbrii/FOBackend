@@ -132,9 +132,9 @@ public class HomeManagement {
                 applicationMessage = "Username e password errati!";
                 loggedUser=null;
             } else {
-                if (user.getdeleted().equals("Y")) {
+                if (user.getadmin().equals("1")) {
                     sessionUserDAO.delete(null);
-                    applicationMessage = "Account eliminato!";
+                    applicationMessage = "Non sei un organizzatore! Esegui login con un account organizzatore";
                     loggedUser=null;
                 } else {
                     loggedUser = sessionUserDAO.create(user.getID_user(), user.getname(),user.getsurname(), null, null, null, user.getadmin(), null);

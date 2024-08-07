@@ -1,3 +1,9 @@
+<%@ page import="com.fo.fo.model.mo.USER" %><%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "postView";
+%>
 <div class="gallery">
     <img  src="img/account.png" alt="image1" width="300" height="200">
 </div><!DOCTYPE html>
@@ -286,6 +292,7 @@
     }
 </style>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
 </head>
