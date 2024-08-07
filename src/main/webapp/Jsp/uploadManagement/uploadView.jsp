@@ -387,6 +387,5 @@
     <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView' ">Conferma</p></button>
     <button class="button-3"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
 </div>
-</div>
 </body>
 </html>
