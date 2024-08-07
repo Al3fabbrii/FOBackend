@@ -1,6 +1,4 @@
-<div class="gallery">
-    <img  src="img/account.png" alt="image1" width="300" height="200">
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <style>
     .desktop {
@@ -20,7 +18,7 @@
 
     .desktop .overlap-group {
         width: 1139px;
-        height: 855px;
+        height: 900px;
         left: 151px;
         background-color: #336699b2;
         border-radius: 30px;
@@ -139,7 +137,7 @@
         left: 1372px;
         background-color: #336699;
         border-radius: 22.5px;
-        background-image: url(./img/account.png);
+        background-image: url(https://www.svgrepo.com/show/453660/account.svg);
         background-size: cover;
         background-position: 50% 50%;
         position: absolute;
@@ -157,7 +155,7 @@
         gap: var(--size-space-200);
         padding: var(--size-space-300);
         position: absolute;
-        top: 915px;
+        top: 960px;
         background-color: #336699;
         border-radius: var(--size-radius-200);
         overflow: hidden;
@@ -190,7 +188,7 @@
         gap: var(--size-space-200);
         padding: var(--size-space-300);
         position: absolute;
-        top: 915px;
+        top: 960px;
         background-color: #336699;
         border-radius: var(--size-radius-200);
         overflow: hidden;
@@ -311,41 +309,41 @@
             </div>
             <div class="group">
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image1">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image1">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image2">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image2">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image3">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image3">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image4">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image4">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image5">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image5">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image6">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image6">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image7">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image7">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image8">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image8">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image9">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image9">
                 </div>
                 <div class="gallery">
-                    <img  src="img/account.png" alt="image10">
+                    <img  src="https://www.svgrepo.com/show/453660/account.svg" alt="image10">
                 </div>
 
             </div>
         </div>
-        <div class="overlap" onclick="location.href='Dispatcher?controllerAction=homeManagement.loginView' "></div>
+        <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
         <button class="button"><div class="button-2">Conferma</div></button>
-        <button class="button-3"><div class="button-2" onclick="location.href='Dispatcher?controllerAction=homeManagement.viewEvent' ">Annulla</div></button>
+        <button class="button-3"><div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView' ">Annulla</div></button>
     </div>
 </div>
 </body>

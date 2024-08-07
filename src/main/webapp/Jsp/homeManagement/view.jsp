@@ -276,6 +276,26 @@
         <input type="hidden" name="controllerAction" value="HomeManagement.logout"/>
     </form>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var applicationMessage;
+        <% if (applicationMessage != null && !applicationMessage.isEmpty()) { %>
+        applicationMessage = "<%= applicationMessage %>";
+        <% } %>
+
+        function onLoadHandler() {
+            // Chiamata a eventuali altre funzioni di onload
+            try { headerOnLoadHandler(); } catch (e) {}
+            try { mainOnLoadHandler(); } catch (e) {}
+
+            // Mostra il messaggio di errore se presente
+            if (applicationMessage != undefined) {
+                alert(applicationMessage);
+            }
+        }
+
+        // Aggiungi l'event listener per il caricamento della pagina
+        window.addEventListener("load", onLoadHandler);
+    </script>
 </head>
 <body>
 <%@include file="/include/htmlHead.jsp"%>

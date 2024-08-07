@@ -442,7 +442,7 @@
         <div class="div-wrapper"><p class="p">Seleziona una o più foto per creare il tuo post</p></div>
     </div>
     <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
-    <div class="button">
+    <div class="button" onclick="location.href='Dispatcher?controllerAction=UploadManagement.postView' ">
         <img class="img" src="img/tag.svg"/> <p class="button-2">Crea il post</p>
     </div>
 </div>
