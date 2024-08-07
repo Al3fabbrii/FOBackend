@@ -450,6 +450,5 @@
         <img class="img" src="img/tag.svg"/> <p class="button-2">Crea il post</p>
     </div>
 </div>
-</div>
 </body>
 </html>
