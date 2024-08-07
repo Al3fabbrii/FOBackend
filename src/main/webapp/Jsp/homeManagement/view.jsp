@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.fo.fo.model.mo.USER" %>
 <%@ page import="com.fo.fo.services.logservice.LogService" %>
 <%--
@@ -266,19 +267,36 @@
     }
 
 </style>
-<script language="javascript">
-    function mainOnLoadHandler() {}
-</script>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <form name="logoutForm" action="Dispatcher" method="post">
         <input type="hidden" name="controllerAction" value="HomeManagement.logout"/>
     </form>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var applicationMessage;
+        <% if (applicationMessage != null && !applicationMessage.isEmpty()) { %>
+        applicationMessage = "<%= applicationMessage %>";
+        <% } %>
+
+        function onLoadHandler() {
+            // Chiamata a eventuali altre funzioni di onload
+            try { headerOnLoadHandler(); } catch (e) {}
+            try { mainOnLoadHandler(); } catch (e) {}
+
+            // Mostra il messaggio di errore se presente
+            if (applicationMessage != undefined) {
+                alert(applicationMessage);
+            }
+        }
+
+        // Aggiungi l'event listener per il caricamento della pagina
+        window.addEventListener("load", onLoadHandler);
+    </script>
 </head>
 <body>
-<%@include file="/include/htmlHead.jsp"%>
 <% if (loggedOn) { %>
 <div class="benvenuto-your-name-wrapper">
     <div class="benvenuto-your-name">Benvenuto:<br /><br /><br /><%=loggedUser.getname()%> <%=loggedUser.getsurname()%></div>

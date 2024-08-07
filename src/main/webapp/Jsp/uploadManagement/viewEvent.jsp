@@ -443,7 +443,7 @@
     </div>
     <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
     <div class="button">
-        <img class="img" src="img/tag.svg"/> <p class="button-2">Crea il post</p>
+        <img class="img" src="img/tag.svg"/> <p class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.postView' ">Crea il post</p>
     </div>
 </div>
 </body>
