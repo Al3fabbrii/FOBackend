@@ -396,12 +396,11 @@
     }
 </style>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
-
 </head>
 <body>
-<%@include file="/include/htmlHead.jsp"%>
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">
@@ -440,7 +439,7 @@
                     </div>
                     <input type="hidden" name="controllerAction" value="HomeManagement.register"/>
                     <button class="button-3">
-                        <img class="user" src="user.svg" />
+                        <img class="user" src="img/user.svg" />
                         <input class="button-4" type="submit" value="Registrati">
                     </button>
                 </form>
