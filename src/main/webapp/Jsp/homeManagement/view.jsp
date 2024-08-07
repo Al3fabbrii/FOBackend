@@ -294,10 +294,10 @@
             <div class="rectangle"></div>
             <div class="div-wrapper"><div class="text-wrapper">Seleziona l'operazione che desideri:</div></div>
             <div class="group"><img class="account" src="https://www.svgrepo.com/show/453660/account.svg" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView'"/></div>
-            <button class="button" onclick="location.href='Dispatcher?controllerAction=UploadViewManagement.view'">
+            <button class="button" onclick="location.href='Dispatcher?controllerAction=UploadManagement.uploadView'">
                 <img class="upload" src="upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
             </button>
-            <div class="button-2" onclick="location.href='Dispatcher?controllerAction=ViewEventManagement.view'">
+            <div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView'">
                 <p class="select">Seleziona contenuti per creare un post<br />(solo organizzatori di eventi)</p>
             </div>
         </div>
