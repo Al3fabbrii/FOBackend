@@ -291,7 +291,6 @@
                 alert(applicationMessage);
             }
         }
-
         // Aggiungi l'event listener per il caricamento della pagina
         window.addEventListener("load", onLoadHandler);
     </script>
