@@ -1,3 +1,10 @@
+<%@ page import="com.fo.fo.model.mo.USER" %>
+<%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "UploadView";
+%>
 <!DOCTYPE html>
 <html>
 <style>
@@ -300,7 +307,8 @@
     }
 </style>
 <head>
-    <meta charset="utf-8"/>
+    <%@include file="/include/htmlHead.jsp"%>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -384,7 +392,7 @@
         </div>
     </div>
     <div class="overlap-3" onclick="location.href='Dispatcher?controllerAction=homeManagement.loginView' "></div>
-    <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView' ">Conferma</p></button>
+    <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=PostViewManagement.postView' ">Conferma</p></button>
     <button class="button-3"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
 </div>
 </body>

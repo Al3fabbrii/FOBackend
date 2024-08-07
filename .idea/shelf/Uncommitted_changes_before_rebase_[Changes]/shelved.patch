@@ -1,0 +1,327 @@
+Index: src/main/webapp/Jsp/uploadManagement/uploadView.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%@ page import=\"com.fo.fo.model.mo.USER\" %>\r\n<%\r\n    boolean loggedOn = (Boolean) request.getAttribute(\"loggedOn\");\r\n    USER loggedUser = (USER) request.getAttribute(\"loggedUser\");\r\n    String applicationMessage = (String) request.getAttribute(\"applicationMessage\");\r\n    String menuActiveLink = \"UploadView\";\r\n%>\r\n<!DOCTYPE html>\r\n<html>\r\n<style>\r\n    .desktop {\r\n        background-color: #ffffff;\r\n        display: flex;\r\n        flex-direction: row;\r\n        justify-content: center;\r\n        width: 100%;\r\n    }\r\n\r\n    .desktop .div {\r\n        background-color: #ffffff;\r\n        width: 1440px;\r\n        height: 1024px;\r\n        position: relative;\r\n    }\r\n\r\n    .desktop .overlap {\r\n        position: absolute;\r\n        width: 1200px;\r\n        height: 771px;\r\n        top: 80px;\r\n        left: 22px;\r\n    }\r\n    .desktop .account {\r\n        position: relative;\r\n        width: 64px;\r\n        height: 64px;\r\n        top: -10px;\r\n        left: -10px;\r\n        object-fit: cover;\r\n        backdrop-filter: brightness(0%);\r\n        border-radius: 90px;\r\n        border: 3px solid;\r\n        border-color: #000000;\r\n    }\r\n    .desktop .overlap-group {\r\n        position: absolute;\r\n        width: 1200px;\r\n        height: 594px;\r\n        top: 0;\r\n        left: 0;\r\n    }\r\n\r\n    .desktop .group {\r\n        position: absolute;\r\n        width: 1004px;\r\n        height: 434px;\r\n        top: 0;\r\n        left: 196px;\r\n        background-color: #336699;\r\n        border-radius: 20px;\r\n        border-color: black;\r\n        border-width: 5px;\r\n    }\r\n\r\n    .desktop .frame {\r\n        display: flex;\r\n        width: 766px;\r\n        height: 136px;\r\n        top: 149px;\r\n        left: 150px;\r\n        align-items: center;\r\n        justify-content: center;\r\n        gap: 10px;\r\n        position: relative;\r\n        background-color: #336699;\r\n\r\n    }\r\n\r\n    .desktop .text-wrapper {\r\n        position: relative;\r\n        width: fit-content;\r\n        font-family: \"Inter-Regular\", Helvetica;\r\n        font-weight: 400;\r\n        color: #ffffff;\r\n        font-size: 50px;\r\n        letter-spacing: 0;\r\n        line-height: normal;\r\n    }\r\n\r\n    .desktop .select-field {\r\n        display: flex;\r\n        flex-direction: column;\r\n        width: 237px;\r\n        height: 162px;\r\n        align-items: flex-start;\r\n        gap: var(--size-space-200);\r\n        position: absolute;\r\n        top: 432px;\r\n        left: -150px;\r\n    }\r\n\r\n    .desktop .label {\r\n        position: relative;\r\n        align-self: stretch;\r\n        margin-top: -1px;\r\n        font-family: var(--body-base-font-family);\r\n        font-weight: var(--body-base-font-weight);\r\n        color: var(--color-text-default-default);\r\n        font-size: var(--body-base-font-size);\r\n        letter-spacing: var(--body-base-letter-spacing);\r\n        line-height: var(--body-base-line-height);\r\n        font-style: var(--body-base-font-style);\r\n    }\r\n\r\n    .desktop .select {\r\n        display: flex;\r\n        min-width: 240px;\r\n        height: 42px;\r\n        align-items: center;\r\n        gap: var(--size-space-200);\r\n        padding: var(--size-space-300) var(--size-space-300) var(--size-space-300) var(--size-space-400);\r\n        position: relative;\r\n        align-self: stretch;\r\n        width: 100%;\r\n        margin-left: -1px;\r\n        margin-right: -4px;\r\n        background-color: var(--color-background-default-default);\r\n        border-radius: var(--size-radius-200);\r\n        border: 1px solid;\r\n        border-color: var(--color-border-default-default);\r\n    }\r\n\r\n    .desktop .value {\r\n        position: relative;\r\n        flex: 1;\r\n        margin-top: -0.5px;\r\n        font-family: var(--single-line-body-base-font-family);\r\n        font-weight: var(--single-line-body-base-font-weight);\r\n        color: var(--color-text-default-default);\r\n        font-size: var(--single-line-body-base-font-size);\r\n        letter-spacing: var(--single-line-body-base-letter-spacing);\r\n        line-height: var(--single-line-body-base-line-height);\r\n        font-style: var(--single-line-body-base-font-style);\r\n    }\r\n\r\n    .desktop .chevron-down {\r\n        position: relative;\r\n        width: 16px;\r\n        height: 16px;\r\n    }\r\n\r\n    .desktop .overlap-2 {\r\n        position: absolute;\r\n        width: 602px;\r\n        height: 255px;\r\n        top: 516px;\r\n        left: 397px;\r\n    }\r\n\r\n    .desktop .overlap-3 {\r\n        position: absolute;\r\n        width: 45px;\r\n        height: 45px;\r\n        top: 17px;\r\n        left: 1370px;\r\n        background-color: #336699;\r\n        border-radius: 22.5px;\r\n        background-image: url(https://www.svgrepo.com/show/453660/account.svg);\r\n        background-size: cover;\r\n        background-position: 50% 50%;\r\n        border-color: black;\r\n        border: 2px solid;\r\n    }\r\n\r\n    .desktop .button {\r\n        all: unset;\r\n        box-sizing: border-box;\r\n        width: 226px;\r\n        left: 1189px;\r\n        display: flex;\r\n        height: 81px;\r\n        align-items: center;\r\n        justify-content: center;\r\n        gap: var(--size-space-200);\r\n        padding: var(--size-space-300);\r\n        position: absolute;\r\n        top: 800px;\r\n        background-color: #336699;\r\n        border-radius: var(--size-radius-200);\r\n        overflow: hidden;\r\n        border: 1px solid;\r\n        border-color: #000000;\r\n    }\r\n\r\n    .desktop .button-2 {\r\n        all: unset;\r\n        box-sizing: border-box;\r\n        position: relative;\r\n        width: fit-content;\r\n        font-family: \"Inter-Regular\", Helvetica;\r\n        font-weight: 400;\r\n        color: var(--color-text-brand-on-brand);\r\n        font-size: 32px;\r\n        letter-spacing: 0;\r\n        line-height: 32px;\r\n        white-space: nowrap;\r\n    }\r\n\r\n    .desktop .button-3 {\r\n        all: unset;\r\n        box-sizing: border-box;\r\n        width: 235px;\r\n        left: 24px;\r\n        display: flex;\r\n        height: 81px;\r\n        align-items: center;\r\n        justify-content: center;\r\n        gap: var(--size-space-200);\r\n        padding: var(--size-space-300);\r\n        position: absolute;\r\n        top: 800px;\r\n        background-color: #336699;\r\n        border-radius: var(--size-radius-200);\r\n        overflow: hidden;\r\n        border: 1px solid;\r\n        border-color: #000000;\r\n    }\r\n    :root {\r\n        --body-base-font-family: \"Inter\", Helvetica;\r\n        --body-base-font-weight: 400;\r\n        --body-base-font-size: 16px;\r\n        --body-base-letter-spacing: 0px;\r\n        --body-base-line-height: 139.9999976158142%;\r\n        --body-base-font-style: normal;\r\n        --single-line-body-base-font-family: \"Inter\", Helvetica;\r\n        --single-line-body-base-font-weight: 400;\r\n        --single-line-body-base-font-size: 16px;\r\n        --single-line-body-base-letter-spacing: 0px;\r\n        --single-line-body-base-line-height: 100%;\r\n        --single-line-body-base-font-style: normal;\r\n        --collection-1-color: rgba(255, 255, 255, 1);\r\n        --color-text-brand-on-brand: var(--color-primitives-brand-100);\r\n        --color-text-default-default: var(--color-primitives-gray-900);\r\n        --color-background-default-default: var(--color-primitives-white-1000);\r\n        --color-border-default-default: var(--color-primitives-gray-300);\r\n        --color-background-brand-default: var(--color-primitives-brand-800);\r\n        --color-background-brand-hover: var(--color-primitives-brand-900);\r\n        --color-border-brand-default: var(--color-primitives-brand-800);\r\n        --color-primitives-brand-100: rgba(245, 245, 245, 1);\r\n        --color-primitives-gray-900: rgba(30, 30, 30, 1);\r\n        --color-primitives-brand-900: rgba(30, 30, 30, 1);\r\n        --color-primitives-white-1000: rgba(255, 255, 255, 1);\r\n        --color-primitives-gray-300: rgba(217, 217, 217, 1);\r\n        --color-primitives-gray-600: rgba(68, 68, 68, 1);\r\n        --color-primitives-brand-800: rgba(44, 44, 44, 1);\r\n        --color-primitives-brand-300: rgba(217, 217, 217, 1);\r\n        --size-space-200: 8px;\r\n        --size-space-400: 16px;\r\n        --size-space-300: 12px;\r\n        --size-radius-200: 8px;\r\n    }\r\n\r\n    /*\r\n\r\n    To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:\r\n\r\n    <body data-color-mode=\"SDS-light\">\r\n        <!-- the rest of your content -->\r\n    </body>\r\n\r\n    You can apply the theme on any DOM node, not just the `body`\r\n\r\n    */\r\n\r\n    [data-color-mode=\"SDS-light\"] {\r\n        --color-text-brand-on-brand: var(--color-primitives-brand-100);\r\n        --color-text-default-default: var(--color-primitives-gray-900);\r\n        --color-background-default-default: var(--color-primitives-white-1000);\r\n        --color-border-default-default: var(--color-primitives-gray-300);\r\n        --color-background-brand-default: var(--color-primitives-brand-800);\r\n        --color-background-brand-hover: var(--color-primitives-brand-900);\r\n        --color-border-brand-default: var(--color-primitives-brand-800);\r\n    }\r\n\r\n    [data-color-mode=\"SDS-dark\"] {\r\n        --color-text-brand-on-brand: var(--color-primitives-brand-900);\r\n        --color-text-default-default: var(--color-primitives-white-1000);\r\n        --color-background-default-default: var(--color-primitives-gray-900);\r\n        --color-border-default-default: var(--color-primitives-gray-600);\r\n        --color-background-brand-default: var(--color-primitives-brand-100);\r\n        --color-background-brand-hover: var(--color-primitives-brand-300);\r\n        --color-border-brand-default: var(--color-primitives-brand-100);\r\n    }\r\n    .upload-container {\r\n        background: white;\r\n        padding: 20px;\r\n        border-radius: 5px;\r\n        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n        text-align: center;\r\n        font-family: \"Inter-Regular\", Helvetica;\r\n    }\r\n\r\n    h1 {\r\n        margin-bottom: 20px;\r\n        font-family: \"Inter-Regular\", Helvetica;\r\n\r\n    }\r\n</style>\r\n<head>\r\n    <%@include file=\"/include/htmlHead.jsp\"%>\r\n    <meta charset=\"utf-8\" />\r\n    <link rel=\"stylesheet\" href=\"globals.css\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n</head>\r\n<body>\r\n<script src=\"https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js\"></script>\r\n<div class=\"desktop\">\r\n    <div class=\"div\">\r\n        <div class=\"overlap\">\r\n            <div class=\"overlap-group\">\r\n                <div class=\"group\"/>\r\n                <div class=\"frame\"><div class=\"text-wrapper\">Event name and information:</div></div>\r\n                <div class=\"select-field\">\r\n                    <label for=\"select\" class=\"label\">Seleziona l'evento</label>\r\n                    <select name=\"select\" id=\"select\" class=\"select\">\r\n                        <option class=\"value\" id=\"Event1\" selected>Evento 1</option>\r\n                        <option class=\"value\" id=\"Event2\">Evento 2</option>\r\n                        <option class=\"value\" id=\"Event3\">Evento 3</option>\r\n                        <option class=\"value\" id=\"Event4\">Evento 4</option>\r\n                        <option class=\"value\" id=\"Event5\">Evento 5</option>\r\n                        <option class=\"value\" id=\"Event6\">Evento 6</option>\r\n                    </select>\r\n                </div>\r\n            </div>\r\n            <div class=\"overlap-2\">\r\n                <div class=\"upload-container\">\r\n                    <h1>Carica Immagini e Video</h1>\r\n                    <form id=\"uploadForm\" enctype=\"multipart/form-data\" method=\"post\">\r\n                        <input type=\"file\" id=\"fileInput\" accept=\"image/*,video/*\" multiple required>\r\n                        <button type=\"submit\">Carica</button>\r\n                        <script> //\r\n                        document.getElementById('select').addEventListener('change', function() {\r\n                            selectedEvent = this.value;\r\n                        });\r\n\r\n                        // Configura le tue credenziali AWS\r\n                        AWS.config.update({\r\n                            accessKeyId: 'AKIAXYKJQ6BAARRPFO46',\r\n                            secretAccessKey: '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',\r\n                            region: 'eu-south-1'  // Es. 'eu-south-1'\r\n                        });\r\n\r\n\r\n                        const s3 = new AWS.S3();\r\n\r\n                        document.getElementById('uploadForm').addEventListener('submit', function(event) {\r\n                            event.preventDefault();\r\n                            console.log('Form submit intercepted');\r\n                            const files = document.getElementById('fileInput').files;\r\n                            if (files.length > 0) {\r\n                                for (let i = 0; i < files.length; i++) {\r\n                                    uploadFile(files[i]);\r\n                                }\r\n                            }\r\n                        });\r\n\r\n\r\n                        function uploadFile(file) {\r\n                            const params = {\r\n                                Bucket: 'projectfo',\r\n                                Key: selectedEvent + '/' + file.name,\r\n                                Body: file,\r\n                                ACL: 'public-read'  // Puoi configurarlo secondo le tue necessità\r\n                            };\r\n\r\n\r\n                            s3.upload(params, function(err, data) {\r\n                                const statusDiv = document.getElementById('status');\r\n                                if (err) {\r\n                                    statusDiv.textContent = `Errore nel caricamento: ${err.message}`;\r\n                                } else {\r\n                                    statusDiv.innerHTML += `File caricato con successo! <a href=\"${data.Location}\" target=\"_blank\">${data.Location}</a><br>`;\r\n                                }\r\n                            });\r\n                        }\r\n\r\n                        </script>\r\n                    </form>\r\n                    <div id=\"status\"></div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"overlap-3\" onclick=\"location.href='Dispatcher?controllerAction=homeManagement.loginView' \"></div>\r\n    <button class=\"button\"><p class=\"button-2\" onclick=\"location.href='Dispatcher?controllerAction=PostViewManagement.postView' \">Conferma</p></button>\r\n    <button class=\"button-3\"><p class=\"button-2\" onclick=\"location.href='Dispatcher?controllerAction=HomeManagement.view' \">Annulla</p></button>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/Jsp/uploadManagement/uploadView.jsp b/src/main/webapp/Jsp/uploadManagement/uploadView.jsp
+--- a/src/main/webapp/Jsp/uploadManagement/uploadView.jsp	(revision 8c32e431b3fb2c62c8d5a01b38ec64c101fad529)
++++ b/src/main/webapp/Jsp/uploadManagement/uploadView.jsp	(date 1723040853218)
+@@ -1,10 +1,3 @@
+-<%@ page import="com.fo.fo.model.mo.USER" %>
+-<%
+-    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+-    USER loggedUser = (USER) request.getAttribute("loggedUser");
+-    String applicationMessage = (String) request.getAttribute("applicationMessage");
+-    String menuActiveLink = "UploadView";
+-%>
+ <!DOCTYPE html>
+ <html>
+ <style>
+@@ -297,23 +290,18 @@
+         border-radius: 5px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+-        font-family: "Inter-Regular", Helvetica;
+     }
+ 
+     h1 {
+         margin-bottom: 20px;
+-        font-family: "Inter-Regular", Helvetica;
+-
+     }
+ </style>
+ <head>
+-    <%@include file="/include/htmlHead.jsp"%>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" href="globals.css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+ <div class="desktop">
+     <div class="div">
+         <div class="overlap">
+@@ -323,68 +311,21 @@
+                 <div class="select-field">
+                     <label for="select" class="label">Seleziona l'evento</label>
+                     <select name="select" id="select" class="select">
+-                        <option class="value" id="Event1" selected>Evento 1</option>
+-                        <option class="value" id="Event2">Evento 2</option>
+-                        <option class="value" id="Event3">Evento 3</option>
+-                        <option class="value" id="Event4">Evento 4</option>
+-                        <option class="value" id="Event5">Evento 5</option>
+-                        <option class="value" id="Event6">Evento 6</option>
++                        <option class="value">Evento 1</option>
++                        <option class="value">Evento 2</option>
++                        <option class="value">Evento 3</option>
++                        <option class="value">Evento 4</option>
++                        <option class="value">Evento 5</option>
++                        <option class="value">Evento 6</option>
+                     </select>
+                 </div>
+             </div>
+             <div class="overlap-2">
+                 <div class="upload-container">
+-                    <h1>Carica Immagini e Video</h1>
+-                    <form id="uploadForm" enctype="multipart/form-data" method="post">
++                    <h1>Carica Immagini e Video su S3</h1>
++                    <form id="uploadForm">
+                         <input type="file" id="fileInput" accept="image/*,video/*" multiple required>
+                         <button type="submit">Carica</button>
+-                        <script> //
+-                        document.getElementById('select').addEventListener('change', function() {
+-                            selectedEvent = this.value;
+-                        });
+-
+-                        // Configura le tue credenziali AWS
+-                        AWS.config.update({
+-                            accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
+-                            secretAccessKey: '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',
+-                            region: 'eu-south-1'  // Es. 'eu-south-1'
+-                        });
+-
+-
+-                        const s3 = new AWS.S3();
+-
+-                        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+-                            event.preventDefault();
+-                            console.log('Form submit intercepted');
+-                            const files = document.getElementById('fileInput').files;
+-                            if (files.length > 0) {
+-                                for (let i = 0; i < files.length; i++) {
+-                                    uploadFile(files[i]);
+-                                }
+-                            }
+-                        });
+-
+-
+-                        function uploadFile(file) {
+-                            const params = {
+-                                Bucket: 'projectfo',
+-                                Key: selectedEvent + '/' + file.name,
+-                                Body: file,
+-                                ACL: 'public-read'  // Puoi configurarlo secondo le tue necessità
+-                            };
+-
+-
+-                            s3.upload(params, function(err, data) {
+-                                const statusDiv = document.getElementById('status');
+-                                if (err) {
+-                                    statusDiv.textContent = `Errore nel caricamento: ${err.message}`;
+-                                } else {
+-                                    statusDiv.innerHTML += `File caricato con successo! <a href="${data.Location}" target="_blank">${data.Location}</a><br>`;
+-                                }
+-                            });
+-                        }
+-
+-                        </script>
+                     </form>
+                     <div id="status"></div>
+                 </div>
+@@ -395,5 +336,8 @@
+     <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=PostViewManagement.postView' ">Conferma</p></button>
+     <button class="button-3"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
+ </div>
++</div>
++<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
++<script src="script.js"></script>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ArtifactsWorkspaceSettings\">\r\n    <artifacts-to-build>\r\n      <artifact name=\"FO:war exploded\" />\r\n    </artifacts-to-build>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca\" name=\"Changes\" comment=\"Commit del form nuovo. Aggiunta js\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"Jsp File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Al3fabbrii&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Al3fabbrii/FOBackend&quot;,\r\n    &quot;accountId&quot;: &quot;210fd3b7-b879-4c6a-84d5-a03c7833e22f&quot;\r\n  }\r\n}</component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"downloadAnnotationsAutomatically\" value=\"true\" />\r\n        <option name=\"downloadDocsAutomatically\" value=\"true\" />\r\n        <option name=\"downloadSourcesAutomatically\" value=\"true\" />\r\n        <option name=\"workspaceImportForciblyTurnedOn\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 6\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2jbHeNCFQRSuUHJr5h9qN97qUvn\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;/home/alessandro/Scrivania/IngegneriaSoftware/FOBackend&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.ignored.files&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [\r\n      &quot;MySQL&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$\" />\r\n      <recent name=\"C:\\Users\\user\\OneDrive\\Desktop\\ProjectFO\\Progetto\\.idea\" />\r\n      <recent name=\"C:\\Users\\user\\OneDrive\\Desktop\\ProjectFO\\Progetto\\src\\main\\webapp\\Jsp\\homeManagement\\img\" />\r\n      <recent name=\"C:\\Users\\user\\OneDrive\\Desktop\\ProjectFO\\Progetto\\src\\main\\webapp\\Jsp\\uploadManagement\" />\r\n      <recent name=\"C:\\Users\\user\\OneDrive\\Desktop\\ProjectFO\\Progetto\\src\\main\\webapp\\Jsp\\StartPage\\img\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement\" />\r\n      <recent name=\"C:\\Users\\user\\OneDrive\\Desktop\\ProjectFO\\Progetto\\src\\main\\webapp\\Jsp\\StartPage\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Tomcat 10.1.20\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 10.1.20\" ALTERNATIVE_JRE_ENABLED=\"true\" ALTERNATIVE_JRE_PATH=\"$PROJECT_DIR$/../../jdk-17.0.11\">\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment>\r\n        <artifact name=\"FO:war exploded\">\r\n          <settings>\r\n            <option name=\"CONTEXT_PATH\" value=\"/FO_war_exploded\" />\r\n          </settings>\r\n        </artifact>\r\n      </deployment>\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"23064baa-c2c7-4e77-a5c2-4e63d3e45207\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"49724\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"BuildArtifacts\" enabled=\"true\">\r\n          <artifact name=\"FO:war exploded\" />\r\n        </option>\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" ALTERNATIVE_JRE_ENABLED=\"false\">\r\n      <deployment />\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"50eb8cf5-bca7-4a5d-9868-1133eaf95a3c\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"34913\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca\" name=\"Changes\" comment=\"\" />\r\n      <created>1721648950994</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1721648950994</updated>\r\n      <workItem from=\"1721648952428\" duration=\"3177000\" />\r\n      <workItem from=\"1721827756363\" duration=\"167000\" />\r\n      <workItem from=\"1721827927090\" duration=\"36000\" />\r\n      <workItem from=\"1721982768482\" duration=\"1853000\" />\r\n      <workItem from=\"1721986639272\" duration=\"60000\" />\r\n      <workItem from=\"1722003549404\" duration=\"2404000\" />\r\n      <workItem from=\"1722065990478\" duration=\"1822000\" />\r\n      <workItem from=\"1722086505432\" duration=\"3397000\" />\r\n      <workItem from=\"1722176313375\" duration=\"639000\" />\r\n      <workItem from=\"1722238538012\" duration=\"1412000\" />\r\n      <workItem from=\"1722430913128\" duration=\"3388000\" />\r\n      <workItem from=\"1722587886232\" duration=\"588000\" />\r\n      <workItem from=\"1722692318993\" duration=\"3335000\" />\r\n      <workItem from=\"1722759306558\" duration=\"1187000\" />\r\n      <workItem from=\"1722844535051\" duration=\"1254000\" />\r\n      <workItem from=\"1722849503163\" duration=\"1048000\" />\r\n      <workItem from=\"1722859987670\" duration=\"3862000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"START\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721649117131</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721649117131</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"START\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721649163426</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721649163426</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"START\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721649305837</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721649305837</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"START\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721649368117</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721649368117</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"START\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1721649421931</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1721649421931</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Changed caps letter\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1722258903338</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1722258903338</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1722695650034</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1722695650034</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Commit del form nuovo. Aggiunta js\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1722863560477</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1722863560477</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Commit del form nuovo. Aggiunta js\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1722863721049</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1722863721049</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"START\" />\r\n    <MESSAGE value=\"Changed caps letter\" />\r\n    <MESSAGE value=\"Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.\" />\r\n    <MESSAGE value=\"Commit del form nuovo. Aggiunta js\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Commit del form nuovo. Aggiunta js\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp</url>\r\n          <line>26</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 8c32e431b3fb2c62c8d5a01b38ec64c101fad529)
++++ b/.idea/workspace.xml	(date 1723040853253)
+@@ -9,7 +9,26 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Commit del form nuovo. Aggiunta js" />
++    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="sistemazione file vari per avvio sito, aggiunta attributo deleted su USER">
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24__09_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24__09_48__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24__09_48__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24__09_48__Changes_1.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24__09_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24__09_53__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_2024_14_56_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_2024_14_56__Changes_.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_14_50_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_15_16_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24,_16_20_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__14_50__Changes_.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__15_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__15_15__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__15_16__Changes_.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__16_20__Changes_.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_24__15_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_24__15_23__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_24__14_53__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_24__14_53__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -24,7 +43,6 @@
+         <option value="Class" />
+         <option value="CSS File" />
+         <option value="Jsp File" />
+-        <option value="JavaScript File" />
+       </list>
+     </option>
+   </component>
+@@ -113,7 +131,7 @@
+     </key>
+   </component>
+   <component name="RunManager">
+-    <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../jdk-17.0.11">
++    <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17">
+       <option name="UPDATING_POLICY" value="restart-server" />
+       <deployment>
+         <artifact name="FO:war exploded">
+@@ -281,8 +299,8 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
++        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
++        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -306,11 +324,10 @@
+       <workItem from="1722238538012" duration="1412000" />
+       <workItem from="1722430913128" duration="3388000" />
+       <workItem from="1722587886232" duration="588000" />
+-      <workItem from="1722692318993" duration="3335000" />
+-      <workItem from="1722759306558" duration="1187000" />
+-      <workItem from="1722844535051" duration="1254000" />
+-      <workItem from="1722849503163" duration="1048000" />
+-      <workItem from="1722859987670" duration="3862000" />
++      <workItem from="1722692318993" duration="3142000" />
++      <workItem from="1722869663137" duration="384000" />
++      <workItem from="1722927758919" duration="2012000" />
++      <workItem from="1722948797865" duration="5000" />
+     </task>
+     <task id="LOCAL-00001" summary="START">
+       <option name="closed" value="true" />
+@@ -360,31 +377,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1722258903338</updated>
+     </task>
+-    <task id="LOCAL-00007" summary="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine.">
+-      <option name="closed" value="true" />
+-      <created>1722695650034</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1722695650034</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary="Commit del form nuovo. Aggiunta js">
+-      <option name="closed" value="true" />
+-      <created>1722863560477</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1722863560477</updated>
+-    </task>
+-    <task id="LOCAL-00009" summary="Commit del form nuovo. Aggiunta js">
+-      <option name="closed" value="true" />
+-      <created>1722863721049</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1722863721049</updated>
+-    </task>
+-    <option name="localTasksCounter" value="10" />
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -404,19 +397,6 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="START" />
+     <MESSAGE value="Changed caps letter" />
+-    <MESSAGE value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
+-    <MESSAGE value="Commit del form nuovo. Aggiunta js" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Commit del form nuovo. Aggiunta js" />
+-  </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp</url>
+-          <line>26</line>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
++    <option name="LAST_COMMIT_MESSAGE" value="Changed caps letter" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>com.FO</groupId>\r\n    <artifactId>FO</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n    <name>FO</name>\r\n    <packaging>war</packaging>\r\n\r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n        <maven.compiler.target>11</maven.compiler.target>\r\n        <maven.compiler.source>11</maven.compiler.source>\r\n        <junit.version>5.9.2</junit.version>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>jakarta.servlet</groupId>\r\n            <artifactId>jakarta.servlet-api</artifactId>\r\n            <version>5.0.0</version>\r\n            <scope>provided</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter-api</artifactId>\r\n            <version>${junit.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter-engine</artifactId>\r\n            <version>${junit.version}</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n    </dependencies>\r\n\r\n    <build>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-war-plugin</artifactId>\r\n                <version>3.3.2</version>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 8c32e431b3fb2c62c8d5a01b38ec64c101fad529)
++++ b/pom.xml	(date 1723040853448)
+@@ -36,6 +36,12 @@
+             <version>${junit.version}</version>
+             <scope>test</scope>
+         </dependency>
++
++        <dependency>
++            <groupId>mysql</groupId>
++            <artifactId>mysql-connector-java</artifactId>
++            <version>8.0.32</version>
++        </dependency>
+     </dependencies>
+ 
+     <build>
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-241.14494.240\">\r\n    <data-source name=\"FO@localhost\" uuid=\"6a92d18c-793f-45d4-8d49-83e6ffcc64ca\">\r\n      <database-info product=\"\" version=\"\" jdbc-version=\"\" driver-name=\"\" driver-version=\"\" dbms=\"MYSQL\" />\r\n      <schema-mapping />\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	(revision 8c32e431b3fb2c62c8d5a01b38ec64c101fad529)
++++ b/.idea/dataSources.local.xml	(date 1723040855657)
+@@ -1,9 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="IU-241.14494.240">
++  <component name="dataSourceStorageLocal" created-in="IU-241.18034.62">
+     <data-source name="FO@localhost" uuid="6a92d18c-793f-45d4-8d49-83e6ffcc64ca">
+-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+-      <schema-mapping />
++      <database-info product="MySQL" version="8.3.0" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.3.0" exact-driver-version="8.2">
++        <extra-name-characters>#@</extra-name-characters>
++        <identifier-quote-string>`</identifier-quote-string>
++      </database-info>
++      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
++      <secret-storage>master_key</secret-storage>
++      <user-name>root</user-name>
++      <schema-mapping>
++        <introspection-scope>
++          <node kind="schema" qname="FO" />
++        </introspection-scope>
++      </schema-mapping>
+     </data-source>
+   </component>
+ </project>
+\ No newline at end of file

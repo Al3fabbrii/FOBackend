@@ -155,7 +155,7 @@
         gap: var(--size-space-200);
         padding: var(--size-space-300);
         position: absolute;
-        top: 960px;
+        top: 961px;
         background-color: #336699;
         border-radius: var(--size-radius-200);
         overflow: hidden;
@@ -188,7 +188,7 @@
         gap: var(--size-space-200);
         padding: var(--size-space-300);
         position: absolute;
-        top: 960px;
+        top: 961px;
         background-color: #336699;
         border-radius: var(--size-radius-200);
         overflow: hidden;
