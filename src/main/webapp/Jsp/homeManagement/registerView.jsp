@@ -396,12 +396,12 @@
     }
 </style>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
 
 </head>
 <body>
-<%@include file="/include/htmlHead.jsp"%>
 <div class="desktop">
     <div class="overlap-group-wrapper">
         <div class="overlap-group">
