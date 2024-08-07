@@ -6,7 +6,8 @@
 %>
 <div class="gallery">
     <img  src="img/account.png" alt="image1" width="300" height="200">
-</div><!DOCTYPE html>
+</div>
+<!DOCTYPE html>
 <html>
 <style>
     .desktop {

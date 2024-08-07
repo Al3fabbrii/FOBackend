@@ -1,4 +1,5 @@
-<%@ page import="com.fo.fo.model.mo.USER" %><%
+<%@ page import="com.fo.fo.model.mo.USER" %>
+<%
     boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
     USER loggedUser = (USER) request.getAttribute("loggedUser");
     String applicationMessage = (String) request.getAttribute("applicationMessage");
