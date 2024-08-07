@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="com.fo.fo.model.mo.USER" %>
 <%@ page import="com.fo.fo.services.logservice.LogService" %>
 <%--
@@ -266,10 +267,8 @@
     }
 
 </style>
-<script language="javascript">
-    function mainOnLoadHandler() {}
-</script>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <form name="logoutForm" action="Dispatcher" method="post">
@@ -298,7 +297,6 @@
     </script>
 </head>
 <body>
-<%@include file="/include/htmlHead.jsp"%>
 <% if (loggedOn) { %>
 <div class="benvenuto-your-name-wrapper">
     <div class="benvenuto-your-name">Benvenuto:<br /><br /><br /><%=loggedUser.getname()%> <%=loggedUser.getsurname()%></div>
