@@ -290,10 +290,13 @@
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
+        font-family: "Inter-Regular", Helvetica;
     }
 
     h1 {
         margin-bottom: 20px;
+        font-family: "Inter-Regular", Helvetica;
+
     }
 </style>
 <head>
@@ -312,7 +315,7 @@
                 <div class="select-field">
                     <label for="select" class="label">Seleziona l'evento</label>
                     <select name="select" id="select" class="select">
-                        <option class="value" id="Event1">Evento 1</option>
+                        <option class="value" id="Event1" selected>Evento 1</option>
                         <option class="value" id="Event2">Evento 2</option>
                         <option class="value" id="Event3">Evento 3</option>
                         <option class="value" id="Event4">Evento 4</option>
@@ -323,12 +326,14 @@
             </div>
             <div class="overlap-2">
                 <div class="upload-container">
-                    <h1>Carica Immagini e Video su S3</h1>
+                    <h1>Carica Immagini e Video</h1>
                     <form id="uploadForm" enctype="multipart/form-data" method="post">
                         <input type="file" id="fileInput" accept="image/*,video/*" multiple required>
                         <button type="submit">Carica</button>
                         <script> //
-
+                        document.getElementById('select').addEventListener('change', function() {
+                            selectedEvent = this.value;
+                        });
 
                         // Configura le tue credenziali AWS
                         AWS.config.update({
@@ -339,34 +344,6 @@
 
 
                         const s3 = new AWS.S3();
-
-
-                            document.getElementById('select').addEventListener('change', function() {
-                            var selectedValue = this.value;
-                            var resultDiv = document.getElementById('result');
-
-                            switch(selectedValue) {
-                            case 'Event1':
-                                resultDiv.textContent = 'You selected Option 1';
-                                break;
-                            case 'Event2':
-                                resultDiv.textContent = 'You selected Option 2';
-                                break;
-                            case 'Event3':
-                                resultDiv.textContent = 'You selected Option 3';
-                                break;
-                            case 'Event4':
-                                resultDiv.textContent = 'You selected Option 4';
-                                break;
-                            case 'Event5':
-                                resultDiv.textContent = 'You selected Option 5';
-                                break;
-                            case 'Event6':
-                                resultDiv.textContent = 'You selected Option 6';
-                                break;
-                        }
-                        });
-
 
                         document.getElementById('uploadForm').addEventListener('submit', function(event) {
                             event.preventDefault();
@@ -382,8 +359,8 @@
 
                         function uploadFile(file) {
                             const params = {
-                                Bucket: 'projectfo/${selectedValue}',
-                                Key: file.name,
+                                Bucket: 'projectfo',
+                                Key: selectedEvent + '/' + file.name,
                                 Body: file,
                                 ACL: 'public-read'  // Puoi configurarlo secondo le tue necessità
                             };
