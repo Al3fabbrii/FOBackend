@@ -190,8 +190,7 @@
     }
     div.gallery {
         position: relative;
-        margin: 5px;
-        margin-left: 5px;
+        margin-top: 5px;
         float: left;
         width: 135px;
         border-radius: 15px;
@@ -205,9 +204,11 @@
         border-color: black;
     }
     .checkbox{
-        position: absolute;
-        top: 3px;
-        right: 0px;
+        position: relative;
+        float: left;
+        top: 5px;
+        left: 30px;
+        z-index: 100;
         border-radius: 15px;
     }
     :root {
@@ -356,11 +357,19 @@
                                     var imageUrl = 'https://s3.' + s3.config.region + '.amazonaws.com/' + bucketName + '/' + object.Key;
                                     var galleryElement = document.createElement('div');
                                     galleryElement.classList.add('gallery');
+                                    // Create the checkbox element
+                                    var checkboxElement = document.createElement('input');
+                                    checkboxElement.type = 'checkbox';
+                                    checkboxElement.classList.add('checkbox');
+
                                     var imgElement = document.createElement('img');
                                     imgElement.src = imageUrl;
                                     imgElement.alt = 'image' + (index + 1);
+                                    groupElement.appendChild(checkboxElement);
                                     galleryElement.appendChild(imgElement);
                                     groupElement.appendChild(galleryElement);
+
+
                                 }
                             });
                         });
@@ -368,6 +377,7 @@
                 </script>
         </div>
             <div class="group">
+
             </div>
 
         </div>

@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Pagina iniziale aggiornata, sistemato il css e sistemato login">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +316,8 @@
       <workItem from="1722849503163" duration="1048000" />
       <workItem from="1722859987670" duration="3862000" />
       <workItem from="1723109993905" duration="82000" />
-      <workItem from="1723121732621" duration="5396000" />
+      <workItem from="1723121732621" duration="6086000" />
+      <workItem from="1723129675120" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -405,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723124276634</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto.">
+      <option name="closed" value="true" />
+      <created>1723127313342</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723127313342</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +439,8 @@
     <MESSAGE value="Commit del form nuovo. Aggiunta js" />
     <MESSAGE value="Push post aggiornamento del login" />
     <MESSAGE value="Pagina iniziale aggiornata, sistemato il css e sistemato login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagina iniziale aggiornata, sistemato il css e sistemato login" />
+    <MESSAGE value="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto." />
+    <option name="LAST_COMMIT_MESSAGE" value="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
