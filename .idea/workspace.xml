@@ -9,18 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Push post aggiornamento del login">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24,_09_48_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_08_24__09_48__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_24__14_50__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_2024_17_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_07_2024_17_32__Changes_.xml" beforeDir="false" />
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Pagina iniziale aggiornata, sistemato il css e sistemato login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/loginView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/loginView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/homeManagement/registerView.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -325,7 +315,7 @@
       <workItem from="1722849503163" duration="1048000" />
       <workItem from="1722859987670" duration="3862000" />
       <workItem from="1723109993905" duration="82000" />
-      <workItem from="1723121732621" duration="2210000" />
+      <workItem from="1723121732621" duration="5396000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -407,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723041644300</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Pagina iniziale aggiornata, sistemato il css e sistemato login">
+      <option name="closed" value="true" />
+      <created>1723124276634</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723124276634</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +428,8 @@
     <MESSAGE value="Sistemato le immagini, messo gli url da internet, sistemato alcune dipendenze di mysql con maven, aggiustato il css delle pagine, aggiustato i bottoni che portano alle varie pagine." />
     <MESSAGE value="Commit del form nuovo. Aggiunta js" />
     <MESSAGE value="Push post aggiornamento del login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Push post aggiornamento del login" />
+    <MESSAGE value="Pagina iniziale aggiornata, sistemato il css e sistemato login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagina iniziale aggiornata, sistemato il css e sistemato login" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

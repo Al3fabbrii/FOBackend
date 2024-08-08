@@ -193,7 +193,7 @@
         margin: 5px;
         margin-left: 5px;
         float: left;
-        width: 90px;
+        width: 135px;
         border-radius: 15px;
     }
 
@@ -292,7 +292,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
 </head>
 <body>
 <div class="desktop">
@@ -307,7 +307,7 @@
             </div>
             <div class="select-field">
             <label for="select" class="label">Seleziona l'evento</label>
-            <select name="select" id="select" class="select" onchange="loadEventImages(this.value)">
+            <select name="select" id="select" class="select">
                 <option class="value" selected>Evento 1</option>
                 <option class="value">Evento 2</option>
                 <option class="value">Evento 3</option>
@@ -316,19 +316,58 @@
                 <option class="value">Evento 6</option>
             </select>
                 <script>
-                    function loadEventImages(selectedEvent) {
-                        if (selectedEvent) {
-                            window.location.href = 'Dispatcher?controllerAction=UploadManagement.eventView';
-                        }
+                    document.getElementById('select').addEventListener('change', function() {
+                        selectedEvent = this.value;
+                        loadImagesForEvent(selectedEvent);
+                    });
+
+                    // Configura le tue credenziali AWS
+                    AWS.config.update({
+                        accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
+                        secretAccessKey: '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',
+                        region: 'eu-south-1'  // Es. 'eu-south-1'
+                    });
+
+                    function loadImagesForEvent(eventName) {
+                        // Create an S3 client
+                        const s3 = new AWS.S3();
+
+                        // Define the S3 bucket and prefix (directory) for the selected event
+                        var bucketName = 'projectfo';
+                        var prefix = eventName; // Extract the event number from the selected event name
+
+                        // List objects (images) in the S3 bucket for the selected event
+                        s3.listObjects({
+                            Bucket: bucketName,
+                            Prefix: prefix
+                        }, function(err, data) {
+                            if (err) {
+                                console.error('Error fetching images:', err);
+                                return;
+                            }
+
+                            // Clear the existing images
+                            var groupElement = document.querySelector('.group');
+                            groupElement.innerHTML = '';
+
+                            // Create new image elements and append them to the group
+                            data.Contents.forEach(function(object, index) {
+                                if (!object.Key.endsWith('/')) { // Exclude directories
+                                    var imageUrl = 'https://s3.' + s3.config.region + '.amazonaws.com/' + bucketName + '/' + object.Key;
+                                    var galleryElement = document.createElement('div');
+                                    galleryElement.classList.add('gallery');
+                                    var imgElement = document.createElement('img');
+                                    imgElement.src = imageUrl;
+                                    imgElement.alt = 'image' + (index + 1);
+                                    galleryElement.appendChild(imgElement);
+                                    groupElement.appendChild(galleryElement);
+                                }
+                            });
+                        });
                     }
                 </script>
         </div>
             <div class="group">
-                <c:forEach var="imageUrl" items="${imageUrls}" varStatus="status">
-                    <div class="gallery">
-                        <img src="${imageUrl}" alt="image${status.index + 1}">
-                    </div>
-                </c:forEach>
             </div>
 
         </div>
