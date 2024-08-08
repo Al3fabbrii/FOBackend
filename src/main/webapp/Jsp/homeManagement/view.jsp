@@ -210,6 +210,24 @@
         border-color: #000000;
     }
 
+    .desktop .button-3 {
+        font-size: large;
+        font-family: "Inter-Regular", Helvetica;
+        display: flex;
+        width: 390px;
+        height: 94px;
+        align-items: center;
+        justify-content: center;
+        gap: var(--size-space-200);
+        padding: var(--size-space-200);
+        position: absolute;
+        top: 817px;
+        left: 500px;
+        background-color: #ffffff;
+        border-radius: var(--size-radius-200);
+        overflow: hidden;
+    }
+
     .desktop .select {
         position: relative;
         width: fit-content;
@@ -317,12 +335,16 @@
                 </a>
                 <% } %>
             </div>
+            <% if (loggedOn) { %>
             <button class="button" onclick="location.href='Dispatcher?controllerAction=UploadManagement.uploadView'">
                 <img class="upload" src="upload.svg"/> <p class="add">Aggiungi nuovi contenuti</p>
             </button>
             <div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView'">
                 <p class="select">Seleziona contenuti per creare un post<br />(solo organizzatori di eventi)</p>
             </div>
+            <% } else {%>
+            <div class="button-3" style="align-content: center; color: black;">Esegui il login con un account organizzatore!</div>
+            <% } %>
         </div>
     </div>
 </div>

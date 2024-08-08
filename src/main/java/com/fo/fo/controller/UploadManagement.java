@@ -7,7 +7,12 @@ import java.util.logging.Logger;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
-
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.ListObjectsV2Result;
+import com.amazonaws.services.s3.model.S3ObjectSummary;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.fo.fo.model.dao.*;
 import com.fo.fo.services.config.Configuration;
@@ -62,31 +67,29 @@ public class UploadManagement {
 
     }
     public static void eventView(HttpServletRequest request, HttpServletResponse response) {
-
-        DAOFactory sessionDAOFactory= null;
+        DAOFactory sessionDAOFactory = null;
         DAOFactory daoFactory = null;
         USER loggedUser;
         String applicationMessage = null;
         Logger logger = LogService.getApplicationLogger();
 
         try {
-
-            Map sessionFactoryParameters=new HashMap<String,Object>();
-            sessionFactoryParameters.put("request",request);
-            sessionFactoryParameters.put("response",response);
-            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            Map sessionFactoryParameters = new HashMap<String, Object>();
+            sessionFactoryParameters.put("request", request);
+            sessionFactoryParameters.put("response", response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL, sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
             USERDAO sessionUserDAO = sessionDAOFactory.getUSERDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
 
-            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL, null);
             daoFactory.beginTransaction();
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedOn", loggedUser != null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
             request.setAttribute("viewUrl", "uploadManagement/viewEvent");
@@ -98,7 +101,6 @@ public class UploadManagement {
             } catch (Throwable t) {
             }
             throw new RuntimeException(e);
-
         } finally {
             try {
                 if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
@@ -106,6 +108,7 @@ public class UploadManagement {
             }
         }
     }
+
     public static void postView(HttpServletRequest request, HttpServletResponse response) {
 
         DAOFactory sessionDAOFactory = null;

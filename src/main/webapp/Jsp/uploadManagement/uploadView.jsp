@@ -163,13 +163,10 @@
         height: 45px;
         top: 17px;
         left: 1370px;
-        background-color: #336699;
-        border-radius: 22.5px;
-        background-image: url(https://www.svgrepo.com/show/453660/account.svg);
+        background-color: #ffffff;
+        background-image: url(https://www.svgrepo.com/show/522900/home-1.svg);
         background-size: cover;
         background-position: 50% 50%;
-        border-color: black;
-        border: 2px solid;
     }
 
     .desktop .button {
@@ -391,7 +388,7 @@
             </div>
         </div>
     </div>
-    <div class="overlap-3" onclick="location.href='Dispatcher?controllerAction=homeManagement.loginView' "></div>
+    <div class="overlap-3" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' "></div>
     <button class="button"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=PostViewManagement.postView' ">Conferma</p></button>
     <button class="button-3"><p class="button-2" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
 </div>

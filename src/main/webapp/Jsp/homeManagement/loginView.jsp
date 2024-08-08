@@ -345,7 +345,6 @@
                     <button class="button"><input type="submit" class="div" value="Effettua il login"></button>
                 </form>
                 <button class="button-2"><p class="button-3" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' ">Annulla</p></button>
-                <div class="div-wrapper"><p class="p">Non sei ancora registrato? <a href="Dispatcher?controllerAction=HomeManagement.registerView">Registrati qui</a></p></div>
             </div>
         </div>
     </div>
