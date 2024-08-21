@@ -121,6 +121,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 300;
+        text-align: center;
+        color: white;
         gap: 10px;
         padding: 10px;
         position: absolute;
@@ -132,9 +136,10 @@
         width: fit-content;
         margin-top: -1px;
         font-family: "Inter-Regular", Helvetica;
-        font-weight: 400;
-        color: #ffffff;
-        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        font-size: 20px;
         letter-spacing: 0;
         line-height: normal;
         white-space: nowrap;
@@ -144,15 +149,12 @@
         position: absolute;
         width: 45px;
         height: 45px;
-        top: 20px;
-        left: 1600px;
-        background-color: #336699;
-        border-radius: 22.5px;
-        background-image: url(https://www.svgrepo.com/show/453660/account.svg);
+        top: 17px;
+        left: 1670px;
+        background-color: #ffffff;
+        background-image: url(https://www.svgrepo.com/show/522900/home-1.svg);
         background-size: cover;
         background-position: 50% 50%;
-        border: 2px solid;
-        border-color: black;
     }
     .desktop .button {
         all: unset;
@@ -303,7 +305,6 @@
             <div class="event-name-and-wrapper">
                 <p class="event-name-and">
                     <span class="text-wrapper">Event name and information:<br /></span>
-                    <span class="span">(aggiungere foto a scelta come sfondo)</span>
                 </p>
             </div>
             <div class="select-field">
@@ -329,12 +330,13 @@
                         region: 'eu-south-1'  // Es. 'eu-south-1'
                     });
 
+
                     function loadImagesForEvent(eventName) {
                         // Create an S3 client
-                        const s3 = new AWS.S3();
 
                         // Define the S3 bucket and prefix (directory) for the selected event
-                        var bucketName = 'projectfo';
+                        const s3 = new AWS.S3();
+                        const bucketName = 'projectfo';
                         var prefix = eventName; // Extract the event number from the selected event name
 
                         // List objects (images) in the S3 bucket for the selected event
@@ -361,6 +363,7 @@
                                     var checkboxElement = document.createElement('input');
                                     checkboxElement.type = 'checkbox';
                                     checkboxElement.classList.add('checkbox');
+                                    checkboxElement.dataset.key = object.Key;
 
                                     var imgElement = document.createElement('img');
                                     imgElement.src = imageUrl;
@@ -368,25 +371,75 @@
                                     groupElement.appendChild(checkboxElement);
                                     galleryElement.appendChild(imgElement);
                                     groupElement.appendChild(galleryElement);
-
-
                                 }
                             });
                         });
                     }
+
+
+
+                    function createPost() {
+                        const s3 = new AWS.S3();
+                        const bucketName = 'projectfo';
+
+                        const selectedCheckboxes = document.querySelectorAll('.checkbox:checked');
+                        console.log('Selected checkboxes:', selectedCheckboxes.length);
+
+                        const selectedKeys = Array.from(selectedCheckboxes).map(checkbox => {
+                            console.log('Checkbox data-key:', checkbox.dataset.key);  // Debug log
+                            return checkbox.dataset.key;
+                        });
+
+                        if (selectedKeys.length === 0) {
+                            alert('Please select at least one image.');
+                            return;
+                        }
+
+                        const destinationPrefix = 'PostCreation/';
+                        let completedRequests = 0; // Counter per tenere traccia delle richieste completate
+
+                        selectedKeys.forEach(key => {
+                            if (!key) {
+                                console.error('Undefined key encountered');
+                                errorCount++;
+                                return;
+                            }
+                            const filename = key.split('/').pop();
+
+                            const params = {
+                                Bucket: bucketName,
+                                CopySource: bucketName + '/' + key,
+                                Key: destinationPrefix + filename
+                            };
+                            console.log('Copying object with params:', params);
+                            s3.copyObject(params, function(err, data) {
+                                if (err) {
+                                    console.error('Error copying object:', err);
+                                    alert('An error occurred during the copy process.');
+                                } else {
+                                    console.log('Successfully copied:', key);
+                                }
+
+                                completedRequests++; // Incrementa il contatore
+                                if (completedRequests === selectedKeys.length) {
+                                    // Se tutte le richieste sono completate, esegui la redirezione
+                                    window.location.href = 'Dispatcher?controllerAction=UploadManagement.postView';
+                                }
+                            });
+                        });
+                    }
+
                 </script>
         </div>
-            <div class="group">
-
-            </div>
-
+            <div class="group"></div>
         </div>
-        <div class="div-wrapper"><p class="p">Seleziona una o più foto per creare il tuo post</p></div>
+        <div class="div-wrapper"><p class="p">Seleziona una o pi&ugrave; foto per creare il tuo post</p></div>
     </div>
-    <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
-    <div class="button" onclick="location.href='Dispatcher?controllerAction=UploadManagement.postView' ">
-        <img class="img" src="img/tag.svg"/> <p class="button-2">Crea il post</p>
+    <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' "></div>
+    <div class="button" type='button' onclick="createPost()">
+        <p class="button-2">Crea il post</p>
     </div>
 </div>
 </body>
 </html>
+

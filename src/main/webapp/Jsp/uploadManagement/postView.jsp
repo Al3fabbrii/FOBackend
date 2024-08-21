@@ -1,3 +1,10 @@
+<%@ page import="com.fo.fo.model.mo.USER" %>
+<%
+    boolean loggedOn = (Boolean) request.getAttribute("loggedOn");
+    USER loggedUser = (USER) request.getAttribute("loggedUser");
+    String applicationMessage = (String) request.getAttribute("applicationMessage");
+    String menuActiveLink = "postView";
+%>
 <!DOCTYPE html>
 <html>
 <style>
@@ -131,18 +138,18 @@
         left: 21px;
     }
 
-    .desktop .overlap {
+    .desktop .overlap-3 {
+        position: absolute;
         width: 45px;
         height: 45px;
-        left: 1372px;
-        background-color: #336699;
-        border-radius: 22.5px;
-        background-image: url(https://www.svgrepo.com/show/453660/account.svg);
+        top: 17px;
+        left: 1370px;
+        background-color: #ffffff;
+        background-image: url(https://www.svgrepo.com/show/522900/home-1.svg);
         background-size: cover;
         background-position: 50% 50%;
-        position: absolute;
-        top: 37px;
     }
+
     .desktop .button {
         all: unset;
         box-sizing: border-box;
@@ -197,10 +204,10 @@
     }
     div.gallery {
         position: relative;
-        margin: 5px;
-        margin-left: 5px;
+        margin-top: 5px;
         float: left;
-        width: 150px;
+        width: 200px;
+        padding: 5px;
         border-radius: 15px;
     }
 
@@ -284,8 +291,10 @@
     }
 </style>
 <head>
+    <%@include file="/include/htmlHead.jsp"%>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
 </head>
 <body>
 <div class="desktop">
@@ -307,12 +316,7 @@
                 <label for="descrizione" class="label">Descrizione del post:</label>
                 <textarea class="text" id="descrizione" name="descrizione"></textarea>
             </div>
-            <div class="group"></div>
             <script>
-                document.getElementById('select').addEventListener('change', function() {
-                    selectedEvent = this.value;
-                    loadImagesForEvent(selectedEvent);
-                });
 
                 // Configura le tue credenziali AWS
                 AWS.config.update({
@@ -321,7 +325,7 @@
                     region: 'eu-south-1'  // Es. 'eu-south-1'
                 });
 
-                function loadImagesForEvent(eventName) {
+                function loadImagesForEvent() {
                     // Create an S3 client
                     const s3 = new AWS.S3();
 
@@ -331,8 +335,7 @@
 
                     // List objects (images) in the S3 bucket for the selected event
                     s3.listObjects({
-                        Bucket: bucketName,
-                        Prefix: prefix
+                        Bucket: bucketName + prefix,
                     }, function(err, data) {
                         if (err) {
                             console.error('Error fetching images:', err);
@@ -358,9 +361,58 @@
                         });
                     });
                 }
+                // Configura le tue credenziali AWS
+                AWS.config.update({
+                    accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
+                    secretAccessKey: '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',
+                    region: 'eu-south-1'  // Es. 'eu-south-1'
+                });
+
+                function loadImagesForEvent() {
+                    // Create an S3 client
+                    const s3 = new AWS.S3();
+
+                    // Define the S3 bucket and prefix (directory) for the selected event
+                    const bucketName = 'projectfo';
+                    const prefix = "PostCreation"; // Extract the event number from the selected event name
+
+                    // List objects (images) in the S3 bucket for the selected event
+                    s3.listObjects({
+                        Bucket: bucketName,
+                        Prefix: prefix,
+                    }, function(err, data) {
+                        if (err) {
+                            console.error('Error fetching images:', err);
+                            return;
+                        }
+
+                        // Clear the existing images
+                        var groupElement = document.querySelector('.group');
+                        groupElement.innerHTML = '';
+
+                        // Create new image elements and append them to the group
+                        data.Contents.forEach(function(object, index) {
+                            if (!object.Key.endsWith('/')) { // Exclude directories
+                                var imageUrl = 'https://s3.' + s3.config.region + '.amazonaws.com/' + bucketName + '/' + object.Key;
+                                var galleryElement = document.createElement('div');
+                                galleryElement.classList.add('gallery');
+                                var imgElement = document.createElement('img');
+                                imgElement.src = imageUrl;
+                                imgElement.alt = 'image' + (index + 1);
+                                galleryElement.appendChild(imgElement);
+                                groupElement.appendChild(galleryElement);
+                            }
+                        });
+                    });
+                }
+
+                // Call the loadImagesForEvent() function when the page is loaded
+                window.addEventListener('load', loadImagesForEvent);
             </script>
+
+            <div class="group"></div>
         </div>
-        <div class="overlap" onclick="location.href='Dispatcher?controllerAction=HomeManagement.loginView' "></div>
+        <div class="overlap-3" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' "></div>
         <button class="button"><div class="button-2">Conferma</div></button>
         <button class="button-3"><div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView' ">Annulla</div></button>
     </div>

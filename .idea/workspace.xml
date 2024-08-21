@@ -9,9 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto.">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/account.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/concerto-musicale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24,_09_53_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_08_24__09_53__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_08_2024_15_34_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_08_2024_15_34__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_08_2024_10_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_08_2024_10_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_08_2024_15_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_08_2024_15_26__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2024_16_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2024_16_27__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2024_16_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_2024_16_32__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_24,_16_36_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_08_24__16_36__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/uploadView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -317,7 +336,14 @@
       <workItem from="1722859987670" duration="3862000" />
       <workItem from="1723109993905" duration="82000" />
       <workItem from="1723121732621" duration="6086000" />
-      <workItem from="1723129675120" duration="1378000" />
+      <workItem from="1723129675120" duration="1867000" />
+      <workItem from="1723207034367" duration="2947000" />
+      <workItem from="1724073265541" duration="87000" />
+      <workItem from="1724073729641" duration="464000" />
+      <workItem from="1724074531416" duration="193000" />
+      <workItem from="1724140188968" duration="6191000" />
+      <workItem from="1724156521396" duration="4336000" />
+      <workItem from="1724245597054" duration="5742000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -415,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723127313342</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale">
+      <option name="closed" value="true" />
+      <created>1723131371746</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723131371746</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,17 +474,7 @@
     <MESSAGE value="Push post aggiornamento del login" />
     <MESSAGE value="Pagina iniziale aggiornata, sistemato il css e sistemato login" />
     <MESSAGE value="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto." />
-    <option name="LAST_COMMIT_MESSAGE" value="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale" />
   </component>
 </project>
