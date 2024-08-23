@@ -63,12 +63,12 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
         return new USERDAOMySQLJCBCImpl(connection);
     }
 
-    /*
-    @Override
-    public ProdottoDAO getProdottoDAO() {
-        return new ProdottoDAOMySQLJDBCImpl(connection);
-    }
 
+    @Override
+    public POSTDAO getPOSTDAO() {
+        return new POSTDAOMySQLJDBCImpl(connection);
+    }
+    /*
     @Override
     public OrderDAO getOrderDAO() { return new OrderDAOMySQLJDBCImpl(connection); }
 

@@ -46,12 +46,12 @@ public class CookieDAOFactory extends DAOFactory {
     public USERDAO getUSERDAO() {
         return new USERDAOCookieImpl(request, response);
     }
-    /*
+
     @Override
-    public ProdottoDAO getProdottoDAO() {
+    public POSTDAO getPOSTDAO() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-
+    /*
     @Override
     public OrderDAO getOrderDAO() {
         throw new UnsupportedOperationException("Not supported yet.");
@@ -69,4 +69,3 @@ public class CookieDAOFactory extends DAOFactory {
 
      */
 }
-

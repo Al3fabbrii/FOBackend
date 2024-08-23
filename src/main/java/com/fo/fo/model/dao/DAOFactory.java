@@ -20,7 +20,10 @@ public abstract class DAOFactory {
     public abstract CartDAO getCartDAO();
     public abstract ShowcaseDAO getShowcaseDAO();
 
+
      */
+
+    public abstract POSTDAO getPOSTDAO();
     public static DAOFactory getDAOFactory(String whichFactory, Map factoryParameters) {
 
         if (whichFactory.equals(MYSQLJDBCIMPL)) {

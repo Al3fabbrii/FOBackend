@@ -322,23 +322,18 @@
                         selectedEvent = this.value;
                         loadImagesForEvent(selectedEvent);
                     });
-
                     // Configura le tue credenziali AWS
                     AWS.config.update({
                         accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
                         secretAccessKey: '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',
                         region: 'eu-south-1'  // Es. 'eu-south-1'
                     });
-
-
                     function loadImagesForEvent(eventName) {
                         // Create an S3 client
-
                         // Define the S3 bucket and prefix (directory) for the selected event
                         const s3 = new AWS.S3();
                         const bucketName = 'projectfo';
                         var prefix = eventName; // Extract the event number from the selected event name
-
                         // List objects (images) in the S3 bucket for the selected event
                         s3.listObjects({
                             Bucket: bucketName,
@@ -348,11 +343,9 @@
                                 console.error('Error fetching images:', err);
                                 return;
                             }
-
                             // Clear the existing images
                             var groupElement = document.querySelector('.group');
                             groupElement.innerHTML = '';
-
                             // Create new image elements and append them to the group
                             data.Contents.forEach(function(object, index) {
                                 if (!object.Key.endsWith('/')) { // Exclude directories
@@ -364,7 +357,6 @@
                                     checkboxElement.type = 'checkbox';
                                     checkboxElement.classList.add('checkbox');
                                     checkboxElement.dataset.key = object.Key;
-
                                     var imgElement = document.createElement('img');
                                     imgElement.src = imageUrl;
                                     imgElement.alt = 'image' + (index + 1);
@@ -375,29 +367,21 @@
                             });
                         });
                     }
-
-
-
                     function createPost() {
                         const s3 = new AWS.S3();
                         const bucketName = 'projectfo';
-
                         const selectedCheckboxes = document.querySelectorAll('.checkbox:checked');
                         console.log('Selected checkboxes:', selectedCheckboxes.length);
-
                         const selectedKeys = Array.from(selectedCheckboxes).map(checkbox => {
                             console.log('Checkbox data-key:', checkbox.dataset.key);  // Debug log
                             return checkbox.dataset.key;
                         });
-
                         if (selectedKeys.length === 0) {
                             alert('Please select at least one image.');
                             return;
                         }
-
                         const destinationPrefix = 'PostCreation/';
                         let completedRequests = 0; // Counter per tenere traccia delle richieste completate
-
                         selectedKeys.forEach(key => {
                             if (!key) {
                                 console.error('Undefined key encountered');
@@ -405,7 +389,6 @@
                                 return;
                             }
                             const filename = key.split('/').pop();
-
                             const params = {
                                 Bucket: bucketName,
                                 CopySource: bucketName + '/' + key,
@@ -419,7 +402,6 @@
                                 } else {
                                     console.log('Successfully copied:', key);
                                 }
-
                                 completedRequests++; // Incrementa il contatore
                                 if (completedRequests === selectedKeys.length) {
                                     // Se tutte le richieste sono completate, esegui la redirezione
@@ -428,7 +410,6 @@
                             });
                         });
                     }
-
                 </script>
         </div>
             <div class="group"></div>

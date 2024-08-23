@@ -300,22 +300,28 @@
 <div class="desktop">
     <div class="div">
         <div class="overlap-group">
-            <div class="input-field">
-                <label for="nome evento" class="label">Nome dell'evento:</label>
-                <input  type="text" id="nome evento" name="nome evento" class="input">
-            </div>
-            <div class="input-field-2">
-                <label for="luogo" class="label">Luogo dell'evento:</label>
-                <input  type="text" id="luogo" name="luogo" class="input">
-            </div>
-            <div class="input-field-3">
-                <label for="titolo" class="label">Titolo dell'evento:</label>
-                <input  type="text" id="titolo" name="titolo" class="input">
-            </div>
-            <div class="textarea-field">
-                <label for="descrizione" class="label">Descrizione del post:</label>
-                <textarea class="text" id="descrizione" name="descrizione"></textarea>
-            </div>
+            <form name="createPostForm" action="Dispatcher" method="post">
+                <div class="input-field">
+                    <label for="nome_evento" class="label">Nome dell'evento:</label>
+                    <input  type="text" id="nome_evento" name="nome_evento" class="input">
+                </div>
+                <div class="input-field-2">
+                    <label for="luogo" class="label">Luogo dell'evento:</label>
+                    <input  type="text" id="luogo" name="luogo" class="input">
+                </div>
+                <div class="input-field-3">
+                    <label for="titolo" class="label">Titolo dell'evento:</label>
+                    <input  type="text" id="titolo" name="titolo" class="input">
+                </div>
+                <div class="textarea-field">
+                    <label for="descrizione" class="label">Descrizione del post:</label>
+                    <textarea class="text" id="descrizione" name="descrizione"></textarea>
+                </div>
+                <input type="hidden" name="controllerAction" value="UploadManagement.createPost"/>
+                <div class="button">
+                    <input class="button-2" type="submit" value="Conferma">
+                </div>
+            </form>
             <script>
 
                 // Configura le tue credenziali AWS
@@ -336,7 +342,7 @@
                     // List objects (images) in the S3 bucket for the selected event
                     s3.listObjects({
                         Bucket: bucketName + prefix,
-                    }, function(err, data) {
+                    }, function (err, data) {
                         if (err) {
                             console.error('Error fetching images:', err);
                             return;
@@ -347,7 +353,7 @@
                         groupElement.innerHTML = '';
 
                         // Create new image elements and append them to the group
-                        data.Contents.forEach(function(object, index) {
+                        data.Contents.forEach(function (object, index) {
                             if (!object.Key.endsWith('/')) { // Exclude directories
                                 var imageUrl = 'https://s3.' + s3.config.region + '.amazonaws.com/' + bucketName + '/' + object.Key;
                                 var galleryElement = document.createElement('div');
@@ -361,6 +367,7 @@
                         });
                     });
                 }
+
                 // Configura le tue credenziali AWS
                 AWS.config.update({
                     accessKeyId: 'AKIAXYKJQ6BAARRPFO46',
@@ -380,7 +387,7 @@
                     s3.listObjects({
                         Bucket: bucketName,
                         Prefix: prefix,
-                    }, function(err, data) {
+                    }, function (err, data) {
                         if (err) {
                             console.error('Error fetching images:', err);
                             return;
@@ -391,7 +398,7 @@
                         groupElement.innerHTML = '';
 
                         // Create new image elements and append them to the group
-                        data.Contents.forEach(function(object, index) {
+                        data.Contents.forEach(function (object, index) {
                             if (!object.Key.endsWith('/')) { // Exclude directories
                                 var imageUrl = 'https://s3.' + s3.config.region + '.amazonaws.com/' + bucketName + '/' + object.Key;
                                 var galleryElement = document.createElement('div');
@@ -413,7 +420,6 @@
             <div class="group"></div>
         </div>
         <div class="overlap-3" onclick="location.href='Dispatcher?controllerAction=HomeManagement.view' "></div>
-        <button class="button"><div class="button-2">Conferma</div></button>
         <button class="button-3"><div class="button-2" onclick="location.href='Dispatcher?controllerAction=UploadManagement.eventView' ">Annulla</div></button>
     </div>
 </div>

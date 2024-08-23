@@ -4,15 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.fo.fo.model.dao.exception.DuplicatedObjectException;
+import com.fo.fo.model.mo.POST;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import com.amazonaws.services.s3.model.ListObjectsV2Result;
-import com.amazonaws.services.s3.model.S3ObjectSummary;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import com.fo.fo.model.dao.*;
 import com.fo.fo.services.config.Configuration;
@@ -67,29 +65,31 @@ public class UploadManagement {
 
     }
     public static void eventView(HttpServletRequest request, HttpServletResponse response) {
-        DAOFactory sessionDAOFactory = null;
+
+        DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
         USER loggedUser;
         String applicationMessage = null;
         Logger logger = LogService.getApplicationLogger();
 
         try {
-            Map sessionFactoryParameters = new HashMap<String, Object>();
-            sessionFactoryParameters.put("request", request);
-            sessionFactoryParameters.put("response", response);
-            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL, sessionFactoryParameters);
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
             USERDAO sessionUserDAO = sessionDAOFactory.getUSERDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
 
-            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL, null);
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("loggedOn", loggedUser != null);
+            request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
             request.setAttribute("viewUrl", "uploadManagement/viewEvent");
@@ -101,6 +101,7 @@ public class UploadManagement {
             } catch (Throwable t) {
             }
             throw new RuntimeException(e);
+
         } finally {
             try {
                 if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
@@ -108,10 +109,9 @@ public class UploadManagement {
             }
         }
     }
-
     public static void postView(HttpServletRequest request, HttpServletResponse response) {
 
-        DAOFactory sessionDAOFactory = null;
+        DAOFactory sessionDAOFactory= null;
         DAOFactory daoFactory = null;
         USER loggedUser;
         String applicationMessage = null;
@@ -119,22 +119,22 @@ public class UploadManagement {
 
         try {
 
-            Map sessionFactoryParameters = new HashMap<String, Object>();
-            sessionFactoryParameters.put("request", request);
-            sessionFactoryParameters.put("response", response);
-            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL, sessionFactoryParameters);
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
             USERDAO sessionUserDAO = sessionDAOFactory.getUSERDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
 
-            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL, null);
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
             daoFactory.beginTransaction();
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("loggedOn", loggedUser != null);
+            request.setAttribute("loggedOn",loggedUser!=null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
             request.setAttribute("viewUrl", "uploadManagement/postView");
@@ -153,5 +153,74 @@ public class UploadManagement {
             } catch (Throwable t) {
             }
         }
+    }
+    public static void createPost(HttpServletRequest request, HttpServletResponse response) {
+
+        DAOFactory sessionDAOFactory= null;
+        DAOFactory daoFactory = null;
+        USER loggedUser;
+        String applicationMessage = null;
+        Logger logger = LogService.getApplicationLogger();
+
+        try {
+
+            Map sessionFactoryParameters=new HashMap<String,Object>();
+            sessionFactoryParameters.put("request",request);
+            sessionFactoryParameters.put("response",response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            sessionDAOFactory.beginTransaction();
+
+            USERDAO sessionUserDAO = sessionDAOFactory.getUSERDAO();
+            loggedUser = sessionUserDAO.findLoggedUser();
+
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory.beginTransaction();
+
+            POSTDAO postdao = daoFactory.getPOSTDAO();
+            POST post;
+
+            try {
+
+                post = postdao.create(
+                        null,
+                        request.getParameter("nome_evento"),
+                        request.getParameter("luogo"),
+                        request.getParameter("titolo"),
+                        request.getParameter("descrizione"));
+
+                applicationMessage = "Creazione del post avvenuta con successo.";
+                request.setAttribute("viewUrl", "homeManagement/view");
+
+
+            } catch (DuplicatedObjectException e) {
+                applicationMessage = "Nome evento già in uso.";
+                logger.log(Level.INFO,"Tentativo di inserimento di un nome evento già esistente.");
+                request.setAttribute("viewUrl", "uploadManagement/postView");
+            }
+
+            daoFactory.commitTransaction();
+            sessionDAOFactory.commitTransaction();
+
+            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedUser", loggedUser);
+            request.setAttribute("applicationMessage", applicationMessage);
+
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Controller Error", e);
+            try {
+                if (daoFactory != null) daoFactory.rollbackTransaction();
+                if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
+            } catch (Throwable t) {
+            }
+            throw new RuntimeException(e);
+
+        } finally {
+            try {
+                if (daoFactory != null) daoFactory.closeTransaction();
+                if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
+            } catch (Throwable t) {
+            }
+        }
+
     }
 }
