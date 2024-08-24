@@ -1,5 +1,8 @@
 package com.fo.fo.controller;
 
+import java.io.IOException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -109,46 +112,56 @@ public class UploadManagement {
             }
         }
     }
-    public static void postView(HttpServletRequest request, HttpServletResponse response) {
 
-        DAOFactory sessionDAOFactory= null;
+    public static void postView(HttpServletRequest request, HttpServletResponse response) {
+        DAOFactory sessionDAOFactory = null;
         DAOFactory daoFactory = null;
         USER loggedUser;
         String applicationMessage = null;
         Logger logger = LogService.getApplicationLogger();
 
         try {
-
-            Map sessionFactoryParameters=new HashMap<String,Object>();
-            sessionFactoryParameters.put("request",request);
-            sessionFactoryParameters.put("response",response);
-            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL,sessionFactoryParameters);
+            Map sessionFactoryParameters = new HashMap<String,Object>();
+            sessionFactoryParameters.put("request", request);
+            sessionFactoryParameters.put("response", response);
+            sessionDAOFactory = DAOFactory.getDAOFactory(Configuration.COOKIE_IMPL, sessionFactoryParameters);
             sessionDAOFactory.beginTransaction();
 
             USERDAO sessionUserDAO = sessionDAOFactory.getUSERDAO();
             loggedUser = sessionUserDAO.findLoggedUser();
 
-            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL,null);
+            daoFactory = DAOFactory.getDAOFactory(Configuration.DAO_IMPL, null);
             daoFactory.beginTransaction();
+
+            // Retrieve the folderName from the request parameter
+            String encodedFolderName = request.getParameter("folderName");
+            String folderName = null;
+            System.out.println("received encoded folder: "+encodedFolderName);
+            if (encodedFolderName != null) {
+                folderName = URLDecoder.decode(encodedFolderName, StandardCharsets.UTF_8.toString());
+            }
+            System.out.println("received folder name: "+ folderName);
 
             daoFactory.commitTransaction();
             sessionDAOFactory.commitTransaction();
 
-            request.setAttribute("loggedOn",loggedUser!=null);
+            request.setAttribute("loggedOn", loggedUser != null);
             request.setAttribute("loggedUser", loggedUser);
             request.setAttribute("applicationMessage", applicationMessage);
             request.setAttribute("viewUrl", "uploadManagement/postView");
+            request.setAttribute("postFolderName", folderName);
 
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Controller Error", e);
             try {
+                if (daoFactory != null) daoFactory.rollbackTransaction();
                 if (sessionDAOFactory != null) sessionDAOFactory.rollbackTransaction();
             } catch (Throwable t) {
             }
             throw new RuntimeException(e);
-
         } finally {
             try {
+                if (daoFactory != null) daoFactory.closeTransaction();
                 if (sessionDAOFactory != null) sessionDAOFactory.closeTransaction();
             } catch (Throwable t) {
             }

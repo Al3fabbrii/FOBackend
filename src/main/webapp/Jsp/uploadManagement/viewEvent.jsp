@@ -370,25 +370,34 @@
                     function createPost() {
                         const s3 = new AWS.S3();
                         const bucketName = 'projectfo';
+
                         const selectedCheckboxes = document.querySelectorAll('.checkbox:checked');
                         console.log('Selected checkboxes:', selectedCheckboxes.length);
+
                         const selectedKeys = Array.from(selectedCheckboxes).map(checkbox => {
-                            console.log('Checkbox data-key:', checkbox.dataset.key);  // Debug log
+                            console.log('Checkbox data-key:', checkbox.dataset.key);
                             return checkbox.dataset.key;
                         });
+
                         if (selectedKeys.length === 0) {
                             alert('Please select at least one image.');
                             return;
                         }
-                        const destinationPrefix = 'PostCreation/';
-                        let completedRequests = 0; // Counter per tenere traccia delle richieste completate
+
+                        // Generate a unique folder name for this post
+                        const postFolderName = 'Post_' + Date.now();
+                        const destinationPrefix = 'Posts/' + postFolderName + '/';
+
+                        let completedRequests = 0;
+
                         selectedKeys.forEach(key => {
                             if (!key) {
                                 console.error('Undefined key encountered');
-                                errorCount++;
+                                completedRequests++;
                                 return;
                             }
                             const filename = key.split('/').pop();
+
                             const params = {
                                 Bucket: bucketName,
                                 CopySource: bucketName + '/' + key,
@@ -402,14 +411,26 @@
                                 } else {
                                     console.log('Successfully copied:', key);
                                 }
-                                completedRequests++; // Incrementa il contatore
+
+                                completedRequests++;
                                 if (completedRequests === selectedKeys.length) {
-                                    // Se tutte le richieste sono completate, esegui la redirezione
-                                    window.location.href = 'Dispatcher?controllerAction=UploadManagement.postView';
+                                    // All copies are done, now save the folder name for this post
+                                    savePostFolderName(postFolderName);
                                 }
                             });
                         });
                     }
+
+                    function savePostFolderName(folderName) {
+                        console.log('Trying to save post folder name:', folderName);
+
+                        // Encode the folderName to handle special characters
+
+
+                        // Redirect to the post view page with the folderName as a query parameter
+                        window.location.href = `Dispatcher?controllerAction=UploadManagement.postView&folderName=`+folderName ;
+                    }
+
                 </script>
         </div>
             <div class="group"></div>

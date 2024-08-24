@@ -9,15 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunta l'opzione di copia delle immagini in modo tale da poterle visualizzare nella pagina del post. Bisogna modificare quella funzione per permettere di svuotare la cartella prima di copiarci dentro gli oggetti">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/CookieImpl/CookieDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/CookieImpl/CookieDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/DAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/IMAGEDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/POSTDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/IMAGEDAOMySQLJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/POSTDAOMySQLJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/MySQLJDBCDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/dao/MySQLJDBCImpl/MySQLJDBCDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/IMAGE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/model/mo/POST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
@@ -334,7 +329,8 @@
       <workItem from="1724245597054" duration="5971000" />
       <workItem from="1724310978547" duration="1642000" />
       <workItem from="1724329654136" duration="5161000" />
-      <workItem from="1724415193792" duration="1557000" />
+      <workItem from="1724415193792" duration="3848000" />
+      <workItem from="1724482191590" duration="8054000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -448,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724251587507</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia">
+      <option name="closed" value="true" />
+      <created>1724416876852</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724416876852</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,6 +479,7 @@
     <MESSAGE value="La pagina viewEvent.jsp adesso mostra le immagini che sono presenti in ogni singola cartella su aws, volendo si può migliorare andando a mettere nel campo di selezione solo le directory che si leggono sul bucket in modo tale da non avere eventi selezionabili e completamente senza foto." />
     <MESSAGE value="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale" />
     <MESSAGE value="Aggiunta l'opzione di copia delle immagini in modo tale da poterle visualizzare nella pagina del post. Bisogna modificare quella funzione per permettere di svuotare la cartella prima di copiarci dentro gli oggetti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta l'opzione di copia delle immagini in modo tale da poterle visualizzare nella pagina del post. Bisogna modificare quella funzione per permettere di svuotare la cartella prima di copiarci dentro gli oggetti" />
+    <MESSAGE value="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia" />
   </component>
 </project>
