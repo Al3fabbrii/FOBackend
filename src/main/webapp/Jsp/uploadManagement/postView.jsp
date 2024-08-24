@@ -313,7 +313,7 @@
                     <input  type="text" id="luogo" name="luogo" class="input">
                 </div>
                 <div class="input-field-3">
-                    <label for="titolo" class="label">Titolo dell'evento:</label>
+                    <label for="titolo" class="label">Titolo del post:</label>
                     <input  type="text" id="titolo" name="titolo" class="input">
                 </div>
                 <div class="textarea-field">

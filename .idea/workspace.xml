@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/UploadManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/postView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Jsp/uploadManagement/viewEvent.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +326,7 @@
       <workItem from="1724310978547" duration="1642000" />
       <workItem from="1724329654136" duration="5161000" />
       <workItem from="1724415193792" duration="3848000" />
-      <workItem from="1724482191590" duration="8054000" />
+      <workItem from="1724482191590" duration="9465000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -452,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724416876852</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp">
+      <option name="closed" value="true" />
+      <created>1724490900313</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1724490900313</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,6 +484,7 @@
     <MESSAGE value="Aggiunti i checkbox per la selezione nella pagine viewEvent.jsp, bisogna andare a scrivere il codice per far si che quando i checkbox siano checkati l'immagine di riferimento venga copiata e aggiunta alla cartella PostCreation nel bucket principale" />
     <MESSAGE value="Aggiunta l'opzione di copia delle immagini in modo tale da poterle visualizzare nella pagina del post. Bisogna modificare quella funzione per permettere di svuotare la cartella prima di copiarci dentro gli oggetti" />
     <MESSAGE value="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia" />
+    <MESSAGE value="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp" />
   </component>
 </project>
