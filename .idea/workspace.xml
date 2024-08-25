@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp">
+    <list default="true" id="fa75b6fa-7d2a-4ee0-b900-00b2466ad4ca" name="Changes" comment="Modificato form di caricamento post">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fo/fo/controller/HomeManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +327,9 @@
       <workItem from="1724310978547" duration="1642000" />
       <workItem from="1724329654136" duration="5161000" />
       <workItem from="1724415193792" duration="3848000" />
-      <workItem from="1724482191590" duration="9465000" />
+      <workItem from="1724482191590" duration="9884000" />
+      <workItem from="1724589166383" duration="661000" />
+      <workItem from="1724589856151" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="START">
       <option name="closed" value="true" />
@@ -456,7 +459,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724490900313</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Modificato form di caricamento post">
+      <option name="closed" value="true" />
+      <created>1724492230629</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1724492230629</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,6 +496,7 @@
     <MESSAGE value="Aggiunta l'opzione di copia delle immagini in modo tale da poterle visualizzare nella pagina del post. Bisogna modificare quella funzione per permettere di svuotare la cartella prima di copiarci dentro gli oggetti" />
     <MESSAGE value="Aggiunta opzione di creazione del post, viene salvato sul database in modo tale che altri vi possano accedere chiamando un metodo specifico, ancora non risolto il problema delle immagini vecchie nella cartella di copia" />
     <MESSAGE value="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta l'ultima opzione per permettere il caricamento in cartelle separate, adesso ogni volta che si crea un post si va a creare una cartella nuova che viene vista dalla postView.jsp" />
+    <MESSAGE value="Modificato form di caricamento post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificato form di caricamento post" />
   </component>
 </project>
